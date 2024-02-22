@@ -269,9 +269,7 @@ or booked out power.</label>
       <label xlink:label="label_ferc_IncrementPeakingName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Increment Peaking Name</label>
       <label xlink:label="label_ferc_TransactionsReported" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Description of the types of transactions reported to the index publisher identified in this record.</label>
       <label xlink:label="label_ferc_RateMaximum" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Maximum rate to be charged per the contract, if a range is specified.</label>
-      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ScheduleEQRContractAbstract" xlink:label="ferc_ScheduleEQRContractAbstract" xlink:type="locator"/>
-      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ScheduleEQRContractAbstract" xlink:to="label_ferc_ScheduleEQRContractAbstract" xlink:type="arc"/>
-      <label xlink:label="label_ferc_ScheduleEQRContractAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Schedule EQR Transaction [Abstract]</label>
+      <label xlink:label="label_ferc_ScheduleEQRContractAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Schedule EQR Contract [Abstract]</label>
       <label xlink:label="label_ferc_RateMinimum" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Rate Minimum</label>
       <link:label id="id_148a9b85" xlink:label="lbl_label1420765212" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Identifier Data [Axis]</link:label>
       <link:loc xlink:href="ferc-core_2021-01-01.xsd#ferc_IdentifierDataAxis" xlink:label="lbl_IdentifierDataAxis" xlink:type="locator"/>
@@ -282,5 +280,21 @@ or booked out power.</label>
       <link:label id="id_12f22acb" xlink:label="lbl_label1549793198" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transaction Data [Axis]</link:label>
       <link:loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionDataAxis" xlink:label="lbl_TransactionDataAxis" xlink:type="locator"/>
       <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_TransactionDataAxis" xlink:to="lbl_label1549793198" xlink:type="arc"/>
+      <link:label id="id_3fb5136e" xlink:label="lbl_ContactCity_labels" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contact City</link:label>
+      <link:loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContactCity" xlink:label="lbl_ContactCity" xlink:type="locator"/>
+      <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_ContactCity" xlink:to="lbl_ContactCity_labels" xlink:type="arc"/>
+      <link:label id="id_1d35bc45" xlink:label="lbl_ContactCity_labels" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">City for contact identified in Field Number 4.</link:label>
+      <link:loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ScheduleEQRContractAbstract" xlink:label="lbl_ScheduleEQRContractAbstract" xlink:type="locator"/>
+      <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_ScheduleEQRContractAbstract" xlink:to="label_ferc_ScheduleEQRContractAbstract" xlink:type="arc"/>
+      <link:label id="id_87ac674" xlink:label="lbl_label142263924" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Schedule EQR Index Reporting [Abstract]</link:label>
+      <link:loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ScheduleEQRIndexReportingAbstract" xlink:label="lbl_ScheduleEQRIndexReportingAbstract" xlink:type="locator"/>
+      <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_ScheduleEQRIndexReportingAbstract" xlink:to="lbl_label142263924" xlink:type="arc"/>
+      <link:label id="id_1477ef0" xlink:label="lbl_IndexReportingDataLineItems_labels" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Index Reporting Data [Line Items]</link:label>
+      <link:loc xlink:href="ferc-core_2021-01-01.xsd#ferc_IndexReportingDataLineItems" xlink:label="lbl_IndexReportingDataLineItems" xlink:type="locator"/>
+      <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_IndexReportingDataLineItems" xlink:to="lbl_IndexReportingDataLineItems_labels" xlink:type="arc"/>
+      <link:label id="id_11e137ed" xlink:label="lbl_IndexReportingDataLineItems_labels" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">dup_1_Line items represent financial concepts included in the table. The following line items relate to EQR Transactions</link:label>
+      <link:label id="id_6b732152" xlink:label="lbl_label1802707282" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Index Reporting Data</link:label>
+      <link:loc xlink:href="ferc-core_2021-01-01.xsd#ferc_IndexReportingData" xlink:label="lbl_IndexReportingData" xlink:type="locator"/>
+      <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_IndexReportingData" xlink:to="lbl_label1802707282" xlink:type="arc"/>
    </labelLink>
 </linkbase>

@@ -7,7 +7,10 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:import namespace="http://ferc.gov/eqr/2020-01-01/Transactions" schemaLocation="trans/eqr-trans_2021-01-01.xsd"/>
-   <xs:import namespace="http://www.ferc.gov/eqr/2020-01-01/Contracts" schemaLocation="con/eqr-con_2021-01-01.xsd"/>
+   <xs:import namespace="http://www.ferc.gov/eqr/2020-01-01/Contracts" schemaLocation="contract/eqr-con_2021-01-01.xsd"/>
    <xs:import namespace="http://www.ferc.gov/eqr/2020-01-01/Identification" schemaLocation="id/eqr-id2021-01-01.xsd"/>
    <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+   <xs:element abstract="false" id="eqr-all_SellerNameHistory" name="SellerNameHistory" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="true" id="eqr-all_IndexReportingAxis" name="IndexReportingAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrldt:typedDomainRef="#eqr-all_IndexReportingAxis.domain" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="eqr-all_IndexReportingAxis.domain" name="IndexReportingAxis.domain" nillable="false" type="xs:token"/>
 </xs:schema>

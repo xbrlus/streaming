@@ -39,6 +39,8 @@
       <link:definitionArc order="2.0" xbrldt:closed="true" xbrldt:contextElement="segment" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_IdentifierDataTable" xlink:type="arc"/>
       <link:definitionArc order="1.0" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="ferc_IdentifierDataTable" xlink:to="lbl_IdentifierDataAxis1" xlink:type="arc"/>
       <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_IdentifierDataAxis" xlink:label="lbl_IdentifierDataAxis1" xlink:type="locator"/>
+      <link:definitionArc order="6.5" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ferc_IdentifierDataLineItems" xlink:to="lbl_ContactCity1" xlink:type="arc"/>
+      <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContactCity" xlink:label="lbl_ContactCity1" xlink:type="locator"/>
    </definitionLink>
    <definitionLink xlink:role="http://www.ferc.gov/eqr/2020-01-01/roles/Identification" xlink:type="extended"/>
 </linkbase>

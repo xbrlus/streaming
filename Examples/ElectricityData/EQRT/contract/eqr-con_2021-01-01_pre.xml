@@ -1,11 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!--contracts-->
 <linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+   <link:roleRef roleURI="http://www.ferc.gov/eqr/2021-01-01/ferc/roles/IndexReporting" xlink:href="../ferc-core_2021-01-01.xsd#indexReporting" xlink:type="simple"/>
    <roleRef roleURI="http://www.ferc.gov/eqr/2020-01-01/roles/Contracts" xlink:href="eqr-con_2021-01-01.xsd#roleType_Contracts" xlink:type="simple"/>
    <presentationLink xlink:role="http://www.ferc.gov/eqr/2020-01-01/roles/Contracts" xlink:type="extended">
-      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ScheduleEQRContractAbstract" xlink:label="ferc_ScheduleEQRContractAbstract" xlink:type="locator"/>
       <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContractDataTable" xlink:label="ferc_ContractDataTable" xlink:type="locator"/>
-      <presentationArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_ScheduleEQRContractAbstract" xlink:to="ferc_ContractDataTable" xlink:type="arc"/>
       <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContractDataLineItems" xlink:label="ferc_ContractDataLineItems" xlink:type="locator"/>
       <presentationArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_ContractDataTable" xlink:to="ferc_ContractDataLineItems" xlink:type="arc"/>
       <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContractUniqueID" xlink:label="ferc_ContractUniqueID" xlink:type="locator"/>
@@ -70,5 +69,26 @@
       <presentationArc order="30.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_ContractDataLineItems" xlink:to="ferc_ContractEndDate" xlink:type="arc"/>
       <link:presentationArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_ContractDataTable" xlink:to="lbl_ContractDataAxis1" xlink:type="arc"/>
       <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContractDataAxis" xlink:label="lbl_ContractDataAxis1" xlink:type="locator"/>
+      <link:loc xlink:href="../ferc-all_2021-01-01.xsd#eqr-all_SellerNameHistory" xlink:label="lbl_SellerNameHistory" xlink:type="locator"/>
+      <link:presentationArc order="2.5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_ContractDataLineItems" xlink:to="lbl_SellerNameHistory" xlink:type="arc"/>
+      <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ScheduleEQRContractAbstract" xlink:label="lbl_ScheduleEQRContractAbstract" xlink:type="locator"/>
+      <link:presentationArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="lbl_ScheduleEQRContractAbstract" xlink:to="ferc_ContractDataTable" xlink:type="arc"/>
    </presentationLink>
+   <link:presentationLink xlink:role="http://www.ferc.gov/eqr/2021-01-01/ferc/roles/IndexReporting" xlink:type="extended">
+      <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_IndexReportingData" xlink:label="lbl_IndexReportingData" xlink:type="locator"/>
+      <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ScheduleEQRIndexReportingAbstract" xlink:label="lbl_ScheduleEQRIndexReportingAbstract" xlink:type="locator"/>
+      <link:presentationArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="lbl_ScheduleEQRIndexReportingAbstract" xlink:to="lbl_IndexReportingData" xlink:type="arc"/>
+      <link:loc xlink:href="../ferc-all_2021-01-01.xsd#eqr-all_IndexReportingAxis" xlink:label="lbl_IndexReportingAxis" xlink:type="locator"/>
+      <link:presentationArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="lbl_IndexReportingData" xlink:to="lbl_IndexReportingAxis" xlink:type="arc"/>
+      <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_IndexReportingDataLineItems" xlink:label="lbl_IndexReportingDataLineItems" xlink:type="locator"/>
+      <link:presentationArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="lbl_IndexReportingData" xlink:to="lbl_IndexReportingDataLineItems" xlink:type="arc"/>
+      <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_FilerUniqueIdentifier" xlink:label="lbl_FilerUniqueIdentifier" xlink:type="locator"/>
+      <link:presentationArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="lbl_IndexReportingDataLineItems" xlink:to="lbl_FilerUniqueIdentifier" xlink:type="arc"/>
+      <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_SellerCompanyName" xlink:label="lbl_SellerCompanyName" xlink:type="locator"/>
+      <link:presentationArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="lbl_IndexReportingDataLineItems" xlink:to="lbl_SellerCompanyName" xlink:type="arc"/>
+      <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_IndexPricePublisher" xlink:label="lbl_IndexPricePublisher" xlink:type="locator"/>
+      <link:presentationArc order="3.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="lbl_IndexReportingDataLineItems" xlink:to="lbl_IndexPricePublisher" xlink:type="arc"/>
+      <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_TransactionsReported" xlink:label="lbl_TransactionsReported" xlink:type="locator"/>
+      <link:presentationArc order="4.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="lbl_IndexReportingDataLineItems" xlink:to="lbl_TransactionsReported" xlink:type="arc"/>
+   </link:presentationLink>
 </linkbase>

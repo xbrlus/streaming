@@ -7,7 +7,7 @@
             "iso4217": "http://www.xbrl.org/2003/iso4217"
         },
         "taxonomy": [
-            "http://eCollections.ferc.gov/EQR/draft/ferc-all_2021-01-01.xsd"
+            "https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd"
         ]
     },
     "tables": {

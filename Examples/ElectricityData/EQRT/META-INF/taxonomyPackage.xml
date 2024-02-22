@@ -1,0 +1,21 @@
+<tp:taxonomyPackage xml:lang='en-US' 
+    xmlns:tp='http://xbrl.org/2016/taxonomy-package'
+    xmlns:ferc-tp='http://www.ferc.gov/form/taxonomy-package'>
+    <tp:identifier>http://eCollections.ferc.gov/EQR/draft/</tp:identifier>
+    <tp:name>FERC EQR Draft Taxonomy</tp:name>
+    <tp:description xml:lang='en-US'>This is a draft taxonomy of the EQR XBRL System</tp:description>
+    <tp:version>2020-06-01</tp:version>
+    <tp:license href='http://eforms.ferc.gov/taxonomy/terms/TaxonomiesTermsConditions.html' name='Taxonomies Terms and Conditions' />
+    <tp:publisher>Federal Energy Regulatory Commission (FERC)</tp:publisher>
+    <tp:publisherURL>http://www.ferc.gov/</tp:publisherURL>
+    <tp:publisherCountry>US</tp:publisherCountry>
+    <tp:publicationDate>2020-06-01</tp:publicationDate>
+    <tp:entryPoints>
+        <tp:entryPoint>
+            <tp:name>FERC EQR</tp:name>
+            <tp:description>FERC EQR Entry Point</tp:description>
+            <tp:version>2020-06-01</tp:version>
+            <tp:entryPointDocument href='http://eCollections.ferc.gov/EQR/draft/ferc-all_2021-01-01.xsd' />
+        </tp:entryPoint>    
+    </tp:entryPoints>
+</tp:taxonomyPackage>

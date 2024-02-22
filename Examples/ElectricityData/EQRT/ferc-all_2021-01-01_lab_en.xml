@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+   <link:labelLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
+      <link:label id="id_28546066" xlink:label="lbl_SellerNameHistory_labels" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Seller Name History</link:label>
+      <link:loc xlink:href="ferc-all_2021-01-01.xsd#eqr-all_SellerNameHistory" xlink:label="lbl_SellerNameHistory" xlink:type="locator"/>
+      <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_SellerNameHistory" xlink:to="lbl_SellerNameHistory_labels" xlink:type="arc"/>
+      <link:label id="id_e59dc6d" xlink:label="lbl_SellerNameHistory_labels" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Previous name of the seller if the name changed during the quarter
+</link:label>
+      <link:label id="id_7e0df233" xlink:label="lbl_label2114843187" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Index Reporting [Axis]</link:label>
+      <link:loc xlink:href="ferc-all_2021-01-01.xsd#eqr-all_IndexReportingAxis" xlink:label="lbl_IndexReportingAxis" xlink:type="locator"/>
+      <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_IndexReportingAxis" xlink:to="lbl_label2114843187" xlink:type="arc"/>
+   </link:labelLink>
+</link:linkbase>

@@ -60,14 +60,6 @@
       <presentationArc order="25.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_TransactionDataLineItems" xlink:to="ferc_TotalTransmissionCharge" xlink:type="arc"/>
       <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_TotalTransactionCharge" xlink:label="ferc_TotalTransactionCharge" xlink:type="locator"/>
       <presentationArc order="26.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_TransactionDataLineItems" xlink:to="ferc_TotalTransactionCharge" xlink:type="arc"/>
-      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_FilerUniqueIdentifier" xlink:label="ferc_FilerUniqueIdentifier" xlink:type="locator"/>
-      <presentationArc order="27.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_TransactionDataLineItems" xlink:to="ferc_FilerUniqueIdentifier" xlink:type="arc"/>
-      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_SellerCompanyName" xlink:label="ferc_SellerCompanyName_1" xlink:type="locator"/>
-      <presentationArc order="28.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_TransactionDataLineItems" xlink:to="ferc_SellerCompanyName_1" xlink:type="arc"/>
-      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_IndexPricePublisher" xlink:label="ferc_IndexPricePublisher" xlink:type="locator"/>
-      <presentationArc order="29.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_TransactionDataLineItems" xlink:to="ferc_IndexPricePublisher" xlink:type="arc"/>
-      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_TransactionsReported" xlink:label="ferc_TransactionsReported" xlink:type="locator"/>
-      <presentationArc order="30.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_TransactionDataLineItems" xlink:to="ferc_TransactionsReported" xlink:type="arc"/>
       <link:presentationArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_TransactionDataTable" xlink:to="lbl_TransactionDataAxis1" xlink:type="arc"/>
       <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_TransactionDataAxis" xlink:label="lbl_TransactionDataAxis1" xlink:type="locator"/>
    </presentationLink>
