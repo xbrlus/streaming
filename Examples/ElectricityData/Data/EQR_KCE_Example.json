@@ -141,9 +141,7 @@
                 },
 
                 "seller_history_name": {
-                    "dimensions": {
-                        "concept": "eqr:SellerHistoryName"
-                    }
+                    
                 },
 
                 "customer_company_name": {
