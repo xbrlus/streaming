@@ -1,0 +1,458 @@
+{
+    "documentInfo": {
+        "documentType": "http://xbrl.org/YYYY/xbrl-csv",
+        "namespaces": {
+            "eqr": "http://www.ferc.gov/eqr/2021-01-01/ferc",
+            "cid": "http://www.ferc.gov/eqr/2021-01-01/ferc/cid",
+            "iso4217": "http://www.xbrl.org/2003/iso4217"
+        },
+        "taxonomy": [
+            "http://eCollections.ferc.gov/EQR/draft/ferc-all_2021-01-01.xsd"
+        ]
+    },
+    "tables": {
+        "identification": {
+            "template": "identification",
+            "url": "KCE_2020_Q1/KCE_2020_Q1_ident.csv"
+        },
+        "contracts": {
+            "template": "contracts",
+            "url": "KCE_2020_Q1/KCE_2020_Q1_contracts.csv"
+        },
+        "transactions10": {
+            "template": "transactions",
+            "url": "KCE_2020_Q1/KCE_2020_Q1_transactions_10.csv"
+        },
+        "transactions": {
+            "template": "transactions",
+            "url": "KCE_2020_Q1/KCE_2020_Q1_transactions.csv"
+        }          
+    },
+    "dimensions":{
+        "entity": "cid:C000001"
+    },
+    "tableTemplates": {
+        "identification": {
+            "dimensions": {
+                "eqr:IdentifierDataAxis": "$filer_unique_id"
+            },
+            "columns": {          
+                "filer_unique_id": {
+                    "dimensions": {
+                        "concept": "eqr:FilerUniqueIdentifier"
+                        
+                    }
+                },
+                "company_name": {
+                    "dimensions": {
+                        "concept": "eqr:CompanyName"
+                        
+                    }
+                },
+                "company_identifier": {
+                    "dimensions": {
+                        "concept": "eqr:CompanyIdentifier"
+                        
+                    }
+                },
+                "contact_name": {
+                    "dimensions": {
+                        "concept": "eqr:ContactName"
+                        
+                    }
+                },
+                "contact_title": {
+                    "dimensions": {
+                        "concept": "eqr:ContactTitle"
+                        
+                    }
+                },
+                "contact_address": {
+                    "dimensions": {
+                        "concept": "eqr:ContactAddress"
+                        
+                    }
+                },
+                "contact_city": {
+                    "dimensions": {
+                        "concept": "eqr:ContactCity"
+                        
+                    }
+                },
+                "contact_state": {
+                    "dimensions": {
+                        "concept": "eqr:ContactState"
+                        
+                    }
+                },
+                "contact_zip": {
+                    "dimensions": {
+                        "concept": "eqr:ContactZip"
+                        
+                    }
+                },
+                "contact_country_name": {
+                    "dimensions": {
+                        "concept": "eqr:ContactCountryName"
+                        
+                    }
+                },
+                "contact_phone": {
+                    "dimensions": {
+                        "concept": "eqr:ContactPhone"
+                        
+                    }
+                },
+                "contact_email": {
+                    "dimensions": {
+                        "concept": "eqr:ContactEMail"
+                        
+                    }
+                },
+                "transactions_reported_to_index_price_publishers": {
+                    "dimensions": {
+                        "concept": "eqr:TransactionsReportedToIndexPricePublisher"
+                        
+                    }
+                },
+                "filing_quarter": {
+                    "dimensions": {
+                        "concept": "eqr:FilingQuarter"
+                        
+                    }
+                }
+            }
+        },
+        "contracts": {
+            "dimensions": {
+                "eqr:ContractDataAxis": "$contract_unique_id"
+            },
+            "columns": {
+                "contract_unique_id": {
+                    "dimensions": {
+                        "concept": "eqr:ContractUniqueID"
+                    }
+                },
+
+                "seller_company_name": {
+                    "dimensions": {
+                        "concept": "eqr:SellerCompanyName"
+                    }
+                },
+
+                "seller_history_name": {
+                    "dimensions": {
+                        "concept": "eqr:SellerHistoryName"
+                    }
+                },
+
+                "customer_company_name": {
+                    "dimensions": {
+                        "concept": "eqr:CustomerCompanyName"
+                    }
+                },
+
+                "contract_affiliate": {
+                    "dimensions": {
+                        "concept": "eqr:ContractAffiliate"
+                    }
+                },
+
+                "ferc_tariff_reference": {
+                    "dimensions": {
+                        "concept": "eqr:FERCTariffReference"
+                    }
+                },
+
+                "contract_service_agreement_id": {
+                    "dimensions": {
+                        "concept": "eqr:ContractServiceAgreementID"
+                    }
+                },
+
+                "contract_execution_date": {
+                    "dimensions": {
+                        "concept": "eqr:ContractExecutionDate"
+                    }
+                },
+
+                "commencement_date_of_contract_term": {
+                    "dimensions": {
+                        "concept": "eqr:CommencementDateOfContractTerms"
+                    }
+                },
+
+                "contract_termination_date": {
+                    "dimensions": {
+                        "concept": "eqr:ContractTerminationDate"
+                    }
+                },
+
+                "actual_termination_date": {
+                    "dimensions": {
+                        "concept": "eqr:ActualTerminationDate"
+                    }
+                },
+
+                "extension_provision_description": {
+                    "dimensions": {
+                        "concept": "eqr:ExtensionProvisionDescription"
+                    }
+                },
+
+                "class_name": {
+                    "dimensions": {
+                        "concept": "eqr:ClassName"
+                    }
+                },
+
+                "term_name": {
+                    "dimensions": {
+                        "concept": "eqr:TermName"
+                    }
+                },
+
+                "increment_name": {
+                    "dimensions": {
+                        "concept": "eqr:IncrementName"
+                    }
+                },
+
+                "increment_peaking_name": {
+                    "dimensions": {
+                        "concept": "eqr:IncrementPeakingName"
+                    }
+                },
+
+                "product_type_name": {
+                    "dimensions": {
+                        "concept": "eqr:ProductTypeName"
+                    }
+                },
+
+                "product_name": {
+                    "dimensions": {
+                        "concept": "eqr:ProductName"
+                    }
+                },
+
+                "quantity": {
+                    "dimensions": {
+                        "concept": "eqr:Quantity"
+                    }
+                },
+
+                "units": {
+                    "dimensions": {
+                        "concept": "eqr:Units"
+                    }
+                },
+
+                "rate": {
+                    "dimensions": {
+                        "concept": "eqr:Rate"
+                    }
+                },
+
+                "rate_minimum": {
+                    "dimensions": {
+                        "concept": "eqr:RateMinimum"
+                    }
+                },
+
+                "rate_maximum": {
+                    "dimensions": {
+                        "concept": "eqr:RateMaximum"
+                    }
+                },
+
+                "rate_description": {
+                    "dimensions": {
+                        "concept": "eqr:RateDescription"
+                    }
+                },
+
+                "rate_units": {
+                    "dimensions": {
+                        "concept": "eqr:RateUnits"
+                    }
+                },
+
+                "point_of_receipt_balancing_authority": {
+                    "dimensions": {
+                        "concept": "eqr:PORBA"
+                    }
+                },
+
+                "point_of_receipt_specific_location": {
+                    "dimensions": {
+                        "concept": "eqr:PORSL"
+                    }
+                },
+
+                "point_of_delivery_balancing_authority": {
+                    "dimensions": {
+                        "concept": "eqr:PODBA"
+                    }
+                },
+
+                "point_of_delivery_specific_location": {
+                    "dimensions": {
+                        "concept": "eqr:PODSL"
+                    }
+                },
+
+                "begin_date": {
+                    "dimensions": {
+                        "concept": "eqr:ContractBeginDate"
+                    }
+                },
+
+                "end_date": {
+                    "dimensions": {
+                        "concept": "eqr:ContractEndDate"
+                    }
+                }
+            }
+        },
+        "transactions": {
+            "dimensions": {
+                "eqr:TransactionDataAxis": "$transaction_unique_id"
+            },
+            "columns":{
+                "transaction_unique_id": {
+                    "dimensions": {
+                        "concept": "eqr:TransactionUniqueID"
+                    }
+                },
+                "seller_company_name": {
+                    "dimensions": {
+                        "concept": "eqr:SellerCompanyName"
+                    }
+                },
+                "customer_company_name": {
+                    "dimensions": {
+                        "concept": "eqr:CustomerCompanyName"
+                    }
+                },
+                "ferc_tariff_reference": {
+                    "dimensions": {
+                        "concept": "eqr:FERCTariffReference"
+                    }
+                },
+                "contract_service_agreement": {
+                    "dimensions": {
+                        "concept": "eqr:ContractServiceAgreementID"
+                    }
+                },
+                "transaction_unique_identifier": {
+                    "dimensions": {
+                        "concept": "eqr:TransactionUniqueIdentifier"
+                    }
+                },
+                "transaction_begin_date": {
+                    "dimensions": {
+                        "concept": "eqr:TransactionBeginDate"
+                    }
+                },
+                "transaction_end_date": {
+                    "dimensions": {
+                        "concept": "eqr:TransactionEndDate"
+                    }
+                },
+                "trade_date": {
+                    "dimensions": {
+                        "concept": "eqr:TradeDate"
+                    }
+                },
+                "exchange_brokerage_service": {
+                    "dimensions": {
+                        "concept": "eqr:ExchangeBrokerageService"
+                    }
+                },
+                "type_of_rate": {
+                    "dimensions": {
+                        "concept": "eqr:TypeOfRate"
+                    }
+                },
+                "time_zone": {
+                    "dimensions": {
+                        "concept": "eqr:TimeZone"
+                    }
+                },
+                "point_of_delivery_balancing_authority": {
+                    "dimensions": {
+                        "concept": "eqr:PODBA"
+                    }
+                },
+                "point_of_delivery_specific_location": {
+                    "dimensions": {
+                        "concept": "eqr:PODSL"
+                    }
+                },
+                "class_name": {
+                    "dimensions": {
+                        "concept": "eqr:ClassName"
+                    }
+                },
+                "term_name": {
+                    "dimensions": {
+                        "concept": "eqr:TermName"
+                    }
+                },
+                "increment_name": {
+                    "dimensions": {
+                        "concept": "eqr:IncrementName"
+                    }
+                },
+                "increment_peaking_name": {
+                    "dimensions": {
+                        "concept": "eqr:IncrementPeakingName"
+                    }
+                },
+                "product_name": {
+                    "dimensions": {
+                        "concept": "eqr:ProductName"
+                    }
+                },
+                "transaction_quantity": {
+                    "dimensions": {
+                        "concept": "eqr:TransactionQuantity"
+                    }
+                },
+                "price": {
+                    "dimensions": {
+                        "concept": "eqr:Price"
+                    }
+                },
+                "rate_units": {
+                    "dimensions": {
+                        "concept": "eqr:RateUnits"
+                    }
+                },
+                "standardized_quantity": {
+                    "dimensions": {
+                        "concept": "eqr:StandardizedQuantity"
+                    }
+                },
+                "standardized_price": {
+                    "dimensions": {
+                        "concept": "eqr:StandardizedPrice"
+                    }
+                },
+                "total_transmission_charge": {
+                    "dimensions": {
+                        "concept": "eqr:TotalTransmissionCharge",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "total_transaction_charge": {
+                    "dimensions": {
+                        "concept": "eqr:TotalTransactionCharge",
+                        "unit": "iso4217:USD"
+                    }
+                }
+            }
+        }
+    }
+}

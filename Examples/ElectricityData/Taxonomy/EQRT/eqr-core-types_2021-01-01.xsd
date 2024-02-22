@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+    FERC types
+ -->
+<xs:schema elementFormDefault="qualified" targetNamespace="http://www.ferc.gov/eqr/types" 
+    xmlns:ferc-types="http://www.ferc.gov/eqr/types" 
+    xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation> This file is the schema file for ferc-types. </xs:documentation>
+    </xs:annotation>
+    <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+
+    <xs:complexType name="formItemType" id="formItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">The form item type indicates that an element is a
+            form.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:length fixed="true" value="0"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="scheduleItemType" id="scheduleItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">The schedule item type indicates that an element is a
+                schedule.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:length fixed="true" value="0"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="statesOfUnitedStatesItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">List of U.S. State and Canada codes. Use ISO 3166 subdivision alpha-2 code such as NY as New York for US States, for Canada use "CAN", and for Mexico use "MEX"</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:enumeration value="AL" />
+                <xs:enumeration value="AK" />
+                <xs:enumeration value="AZ" />
+                <xs:enumeration value="AR" />
+                <xs:enumeration value="AS" />
+                <xs:enumeration value="CA" />
+                <xs:enumeration value="CO" />
+                <xs:enumeration value="CT" />
+                <xs:enumeration value="DE" />
+                <xs:enumeration value="DC" />
+                <xs:enumeration value="FL" />
+                <xs:enumeration value="FM" />
+                <xs:enumeration value="GA" />
+                <xs:enumeration value="GU" />
+                <xs:enumeration value="HI" />
+                <xs:enumeration value="ID" />
+                <xs:enumeration value="IL" />
+                <xs:enumeration value="IN" />
+                <xs:enumeration value="IA" />
+                <xs:enumeration value="KS" />
+                <xs:enumeration value="KY" />
+                <xs:enumeration value="LA" />
+                <xs:enumeration value="MA" />
+                <xs:enumeration value="ME" />
+                <xs:enumeration value="MD" />
+                <xs:enumeration value="MH" />
+                <xs:enumeration value="MI" />
+                <xs:enumeration value="MN" />
+                <xs:enumeration value="MP" />
+                <xs:enumeration value="MS" />
+                <xs:enumeration value="MO" />
+                <xs:enumeration value="MT" />
+                <xs:enumeration value="NE" />
+                <xs:enumeration value="NV" />
+                <xs:enumeration value="NH" />
+                <xs:enumeration value="NJ" />
+                <xs:enumeration value="NM" />
+                <xs:enumeration value="NY" />
+                <xs:enumeration value="NC" />
+                <xs:enumeration value="ND" />
+                <xs:enumeration value="OH" />
+                <xs:enumeration value="OK" />
+                <xs:enumeration value="OR" />
+                <xs:enumeration value="PA" />
+                <xs:enumeration value="PR" />
+                <xs:enumeration value="PW" />
+                <xs:enumeration value="RI" />
+                <xs:enumeration value="SC" />
+                <xs:enumeration value="SD" />
+                <xs:enumeration value="TN" />
+                <xs:enumeration value="TX" />
+                <xs:enumeration value="UT" />
+                <xs:enumeration value="VT" />
+                <xs:enumeration value="VA" />
+                <xs:enumeration value="VI" />
+                <xs:enumeration value="WA" />
+                <xs:enumeration value="WV" />
+                <xs:enumeration value="WI" />
+                <xs:enumeration value="WY" />
+                <xs:enumeration value="CAN" />
+                <xs:enumeration value="MEX" />
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="fileItemType" id="fileItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">The file item type indicates a name of the file.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType"></xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+     <xs:complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="classNameItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Class of Firm.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:enumeration value="F" />
+                <xs:enumeration value="NF" />
+                <xs:enumeration value="UP" />
+                <xs:enumeration value="N/A" />
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+        <xs:complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="incrementNameItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Time Increments</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:enumeration value="5" />
+                <xs:enumeration value="15" />
+                <xs:enumeration value="H" />
+                <xs:enumeration value="D" />
+                <xs:enumeration value="W" />
+                <xs:enumeration value="M" />
+                <xs:enumeration value="Y" />
+                <xs:enumeration value="N/A" />
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+     <xs:complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="termNameItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Contracts with durations of one year or greater are long-term. Contracts
+with shorter durations are short-term.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:enumeration value="LT" />
+                <xs:enumeration value="ST" />
+                <xs:enumeration value="N/A" />
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+     <xs:complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="incrementPeakingNameItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Increment Peaking Names</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:enumeration value="FP" />
+                <xs:enumeration value="OP" />
+                 <xs:enumeration value="P" />
+                 <xs:enumeration value="N/A" />
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="productTypeNameItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">List of valid product types . Enter a value of :
+                    CB - Cost Based - Energy or capacity sold under a FERC-approved cost-based rate tariff, 
+                    CR - Capacity Reassignment An agreement under which a transmission provider sells, assigns or transfers all or portion of its rights to an eligible customer.
+                    MB - Market Based Energy or capacity sold under the seller’s FERC-approved marketbased rate tariff.
+                    T - Transmission The product is sold under a FERC-approved transmission tariff.
+                    NPU – Non-Public Utility The product is sold by a non-public utility that is required to file the EQR under section 220 of the Federal Power Act.
+                    Other The product cannot be characterized by the other product type names.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:enumeration value="CB"/>
+                <xs:enumeration value="CR"/>
+                <xs:enumeration value="MB"/>
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="NPU"/>
+                <xs:enumeration value="Other"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="compressorItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">List of compressor station types</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:enumeration value="Field Compressor Stations"/>
+                <xs:enumeration value="Products Extraction Compressor Station"/>
+                <xs:enumeration value="Undergroud Storage Compressor Stations"/>
+                <xs:enumeration value="Transmission Compressor Stations"/>
+                <xs:enumeration value="Distribution Compressor Stations"/>
+                <xs:enumeration value="Other Compressor Stations"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="ShareholdersReportSubmittedItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">List of status that Stockholders' Reports Check (submitted or not prepared) on the bottom of the list of Schedule.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:enumeration value="Copies Submitted"/>
+                <xs:enumeration value="Not Prepared"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+     <xs:complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="taxTypeItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">List of types of tax</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:enumeration value="Federal Tax"/>
+                <xs:enumeration value="State Tax"/>
+                <xs:enumeration value="Local Tax"/>
+                <xs:enumeration value="Other Taxes"/>                             
+                <xs:enumeration value="Property Tax"/>
+                <xs:enumeration value="Real Estate Tax"/>
+                <xs:enumeration value="Unemployment Tax"/>
+                <xs:enumeration value="Sales And Use Tax"/>
+                <xs:enumeration value="Income Tax"/>
+                <xs:enumeration value="Excise Tax"/>
+                <xs:enumeration value="Fuel Tax"/>
+                <xs:enumeration value="Federal Insurance Tax"/>
+                <xs:enumeration value="Franchise Tax"/>
+                <xs:enumeration value="Miscellaneous Other Tax"/>
+                <xs:enumeration value="Other Federal Tax"/>
+                <xs:enumeration value="Other State Tax"/>
+                <xs:enumeration value="Other Property Tax"/>
+                <xs:enumeration value="Other Use Tax"/>
+                <xs:enumeration value="Other Ad Valorem Tax"/>
+                <xs:enumeration value="Other License And Fees Tax"/>
+                <xs:enumeration value="Payroll Tax"/>
+                <xs:enumeration value="Ad Valorem Tax"/>
+                <xs:enumeration value="Other Allocated Tax"/>
+                <xs:enumeration value="Severance Tax"/>  
+                <xs:enumeration value="Penalty Tax"/>
+                <xs:enumeration value="Other Taxes and Fees"/>                                                                                              
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+     <xs:complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="operationItemType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Description of the ownership and operation of transmission lines in Form 2. The values entered must be either Fully Owned And Operated by Respondent, Jointly Owned And Operated by Respondent, or Not Operated by Respondent</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="xbrli:stringItemType">
+                <xs:enumeration value="Fully Owned And Operated by Respondent"/>
+                <xs:enumeration value="Jointly Owned And Operated by Respondent"/>
+                <xs:enumeration value="Not Operated by Respondent"/>                                                                                        
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>

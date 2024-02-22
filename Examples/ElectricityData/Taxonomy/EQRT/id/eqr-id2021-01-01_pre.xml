@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--id-->
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+   <roleRef roleURI="http://www.ferc.gov/eqr/2020-01-01/roles/Identification" xlink:href="eqr-id2021-01-01.xsd#roleType_Identification" xlink:type="simple"/>
+   <presentationLink xlink:role="http://www.ferc.gov/eqr/2020-01-01/roles/Identification" xlink:type="extended">
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ScheduleEQRIdentifierAbstract" xlink:label="ferc_ScheduleEQRIdentifierAbstract" xlink:type="locator"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_IdentifierDataTable" xlink:label="ferc_IdentifierDataTable" xlink:type="locator"/>
+      <presentationArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_ScheduleEQRIdentifierAbstract" xlink:to="ferc_IdentifierDataTable" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_IdentifierDataLineItems" xlink:label="ferc_IdentifierDataLineItems" xlink:type="locator"/>
+      <presentationArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataTable" xlink:to="ferc_IdentifierDataLineItems" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_FilerUniqueIdentifier" xlink:label="ferc_FilerUniqueIdentifier" xlink:type="locator"/>
+      <presentationArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_FilerUniqueIdentifier" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_CompanyName" xlink:label="ferc_CompanyName" xlink:type="locator"/>
+      <presentationArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_CompanyName" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_CompanyIdentifier" xlink:label="ferc_CompanyIdentifier" xlink:type="locator"/>
+      <presentationArc order="3.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_CompanyIdentifier" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContactName" xlink:label="ferc_ContactName" xlink:type="locator"/>
+      <presentationArc order="4.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_ContactName" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContactTitle" xlink:label="ferc_ContactTitle" xlink:type="locator"/>
+      <presentationArc order="5.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_ContactTitle" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContactAddress" xlink:label="ferc_ContactAddress" xlink:type="locator"/>
+      <presentationArc order="6.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_ContactAddress" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContactState" xlink:label="ferc_ContactState" xlink:type="locator"/>
+      <presentationArc order="7.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_ContactState" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContactZip" xlink:label="ferc_ContactZip" xlink:type="locator"/>
+      <presentationArc order="8.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_ContactZip" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContactCountryName" xlink:label="ferc_ContactCountryName" xlink:type="locator"/>
+      <presentationArc order="9.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_ContactCountryName" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContactPhone" xlink:label="ferc_ContactPhone" xlink:type="locator"/>
+      <presentationArc order="10.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_ContactPhone" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_ContactEMail" xlink:label="ferc_ContactEMail" xlink:type="locator"/>
+      <presentationArc order="11.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_ContactEMail" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_TransactionsReportedToIndexPricePublisher" xlink:label="ferc_TransactionsReportedToIndexPricePublisher" xlink:type="locator"/>
+      <presentationArc order="12.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_TransactionsReportedToIndexPricePublisher" xlink:type="arc"/>
+      <loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_FilingQuarter" xlink:label="ferc_FilingQuarter" xlink:type="locator"/>
+      <presentationArc order="13.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataLineItems" xlink:to="ferc_FilingQuarter" xlink:type="arc"/>
+      <link:presentationArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ferc_IdentifierDataTable" xlink:to="lbl_IdentifierDataAxis1" xlink:type="arc"/>
+      <link:loc xlink:href="../ferc-core_2021-01-01.xsd#ferc_IdentifierDataAxis" xlink:label="lbl_IdentifierDataAxis1" xlink:type="locator"/>
+   </presentationLink>
+</linkbase>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  targetNamespace="http://www.ferc.gov/eqr/roles/reference"
+  xmlns:ferc-ref-roles="http://www.ferc.gov/eqr/roles/reference"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" id="formLocation"
+        roleURI="http://ferc.gov/form/2020-01-01/roles/reference/formLocation">
+        <link:definition>Form Location</link:definition>
+        <link:usedOn>link:reference</link:usedOn>
+      </link:roleType>
+      <link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" id="columnDetails"
+        roleURI="http://ferc.gov/form/2020-01-01/roles/reference/columnDetails">
+        <link:definition>Column Details</link:definition>
+        <link:usedOn>link:reference</link:usedOn>
+      </link:roleType>
+
+      <link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" id="account"
+        roleURI="http://ferc.gov/form/2020-01-01/roles/reference/account">
+        <link:definition>Account</link:definition>
+        <link:usedOn>link:reference</link:usedOn>
+      </link:roleType>
+
+      <link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" id="elementSequence"
+        roleURI="http://ferc.gov/form/2020-01-01/roles/reference/elementSequence">
+        <link:definition>Element Sequence</link:definition>
+        <link:usedOn>link:reference</link:usedOn>
+      </link:roleType>
+      <link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" id="formValidation"
+          roleURI="http://ferc.gov/form/2020-01-01/roles/reference/formValidation">
+          <link:definition>Form Validation</link:definition>
+          <link:usedOn>link:reference</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:import namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+</xs:schema>

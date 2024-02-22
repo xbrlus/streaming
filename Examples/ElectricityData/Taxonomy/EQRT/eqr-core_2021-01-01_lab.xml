@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--Initial EQR taxonomy-->
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+   <labelLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_FilerUniqueIdentifier" xlink:label="ferc_FilerUniqueIdentifier" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_FilerUniqueIdentifier" xlink:to="label_ferc_FilerUniqueIdentifier" xlink:type="arc"/>
+      <label xlink:label="label_ferc_FilerUniqueIdentifier" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">(Seller) – An identifier (e.g., “FS1”, “FS2”) used to designate a record containing Seller identification information. One record for each seller company must be included in an EQR for a given quarter.  (Agent) – An identifier (i.e., “FA1”) used to designate a record containing Agent identification information. One record with the FA1 identifier must be included in an EQR for a given quarter.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_CommencementDateOfContractTerms" xlink:label="ferc_CommencementDateOfContractTerms" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_CommencementDateOfContractTerms" xlink:to="label_ferc_CommencementDateOfContractTerms" xlink:type="arc"/>
+      <label xlink:label="label_ferc_CommencementDateOfContractTerms" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The date the contract was signed. If the parties signed on different dates, use the most recent date signed.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_FERCTariffReference" xlink:label="ferc_FERCTariffReference" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_FERCTariffReference" xlink:to="label_ferc_FERCTariffReference" xlink:type="arc"/>
+      <label xlink:label="label_ferc_FERCTariffReference" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The FERC tariff reference cites the document that specifies the terms and conditions under which a Seller is authorized to make transmission sales, power sales or sales of related jurisdictional services at cost-based rates or at market-based rates. If the sales are market-based, the tariff that is specified in the FERC order granting the Seller Market Based Rate Authority must be listed. If a non-public utility does not have a FERC Tariff Reference, it should enter “NPU” for the FERC Tariff Reference.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionDataLineItems" xlink:label="ferc_TransactionDataLineItems" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TransactionDataLineItems" xlink:to="label_ferc_TransactionDataLineItems" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TransactionDataLineItems" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Line items represent financial concepts included in the table. The following line items relate to EQR Transactions</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_PODBA" xlink:label="ferc_PODBA" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_PODBA" xlink:to="label_ferc_PODBA" xlink:type="arc"/>
+      <label xlink:label="label_ferc_PODBA" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The registered Balancing Authority (formerly called NERC Control Area) abbreviation used in OASIS applications.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContractEndDate" xlink:label="ferc_ContractEndDate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContractEndDate" xlink:to="label_ferc_ContractEndDate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContractEndDate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">End Date</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_RateUnits" xlink:label="ferc_RateUnits" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_RateUnits" xlink:to="label_ferc_RateUnits" xlink:type="arc"/>
+      <label xlink:label="label_ferc_RateUnits" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Measure appropriate to the price of the product sold.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ActualTerminationDate" xlink:label="ferc_ActualTerminationDate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ActualTerminationDate" xlink:to="label_ferc_ActualTerminationDate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ActualTerminationDate" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The date the contract actually terminates.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContractServiceAgreementID" xlink:label="ferc_ContractServiceAgreementID" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContractServiceAgreementID" xlink:to="label_ferc_ContractServiceAgreementID" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContractServiceAgreementID" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contract Service Agreement ID</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_IdentifierDataLineItems" xlink:label="ferc_IdentifierDataLineItems" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_IdentifierDataLineItems" xlink:to="label_ferc_IdentifierDataLineItems" xlink:type="arc"/>
+      <label xlink:label="label_ferc_IdentifierDataLineItems" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Line items represent financial concepts included in the table. The following line items relate to EQR Transactions</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContractDataLineItems" xlink:label="ferc_ContractDataLineItems" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContractDataLineItems" xlink:to="label_ferc_ContractDataLineItems" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContractDataLineItems" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contract Data [Line Items]</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_StandardizedPrice" xlink:label="ferc_StandardizedPrice" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_StandardizedPrice" xlink:to="label_ferc_StandardizedPrice" xlink:type="arc"/>
+      <label xlink:label="label_ferc_StandardizedPrice" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Standardized Price</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ClassName" xlink:label="ferc_ClassName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ClassName" xlink:to="label_ferc_ClassName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ClassName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Class Name</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_CompanyName" xlink:label="ferc_CompanyName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_CompanyName" xlink:to="label_ferc_CompanyName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_CompanyName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Company Name</label>
+      <label xlink:label="label_ferc_FilerUniqueIdentifier" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Filer Unique Identifier</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_FilingQuarter" xlink:label="ferc_FilingQuarter" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_FilingQuarter" xlink:to="label_ferc_FilingQuarter" xlink:type="arc"/>
+      <label xlink:label="label_ferc_FilingQuarter" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Filing Quarter</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContactPhone" xlink:label="ferc_ContactPhone" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContactPhone" xlink:to="label_ferc_ContactPhone" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContactPhone" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Phone number of contact identified in Field Number 4.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_PODSL" xlink:label="ferc_PODSL" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_PODSL" xlink:to="label_ferc_PODSL" xlink:type="arc"/>
+      <label xlink:label="label_ferc_PODSL" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Point of Delivery Specific Location</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContactName" xlink:label="ferc_ContactName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContactName" xlink:to="label_ferc_ContactName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContactName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contact Name</label>
+      <label xlink:label="label_ferc_ContractServiceAgreementID" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Unique identifier given to each service agreement that can be used by the Seller to produce the agreement, if requested. The identifier may be the number assigned by FERC for those service agreements that have been filed and approved by the Commission, or it may be generated as part of an internal identification system.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_RateDescription" xlink:label="ferc_RateDescription" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_RateDescription" xlink:to="label_ferc_RateDescription" xlink:type="arc"/>
+      <label xlink:label="label_ferc_RateDescription" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Rate Description</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TradeDate" xlink:label="ferc_TradeDate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TradeDate" xlink:to="label_ferc_TradeDate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TradeDate" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The date upon which the parties made the legally binding agreement on the price of a transaction.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_StandardizedQuantity" xlink:label="ferc_StandardizedQuantity" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_StandardizedQuantity" xlink:to="label_ferc_StandardizedQuantity" xlink:type="arc"/>
+      <label xlink:label="label_ferc_StandardizedQuantity" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Standardized Quantity</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionsReportedToIndexPricePublisher" xlink:label="ferc_TransactionsReportedToIndexPricePublisher" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TransactionsReportedToIndexPricePublisher" xlink:to="label_ferc_TransactionsReportedToIndexPricePublisher" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TransactionsReportedToIndexPricePublisher" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Sellers should indicate whether they have reported their sales transactions to index price publisher(s). If they have, Sellers should indicate specifically which index publisher(s) in Field Number 73.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_Quantity" xlink:label="ferc_Quantity" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_Quantity" xlink:to="label_ferc_Quantity" xlink:type="arc"/>
+      <label xlink:label="label_ferc_Quantity" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Quantity</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionEndDate" xlink:label="ferc_TransactionEndDate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TransactionEndDate" xlink:to="label_ferc_TransactionEndDate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TransactionEndDate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transaction End Date</label>
+      <label xlink:label="label_ferc_CompanyName" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">(Seller) – The name of the company that is authorized to make sales as indicated in the company’s FERC tariff(s) or that is required to file the EQR under section 220 of the Federal Power Act. (Agent) – The name of the entity completing the EQR filing. The Agent’s Company Name need not be the name of the company under Commission jurisdiction.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ScheduleEQRIdentifierAbstract" xlink:label="ferc_ScheduleEQRIdentifierAbstract" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ScheduleEQRIdentifierAbstract" xlink:to="label_ferc_ScheduleEQRIdentifierAbstract" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ScheduleEQRIdentifierAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Schedule EQR Identifier [Abstract]</label>
+      <label xlink:label="label_ferc_PODSL" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The specific location at which the product is delivered. If receipt occurs at a trading hub, a standardized hub name must be used.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_SellerCompanyName" xlink:label="ferc_SellerCompanyName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_SellerCompanyName" xlink:to="label_ferc_SellerCompanyName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_SellerCompanyName" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The name of the company that is authorized to make sales as indicated in the company’s FERC tariff(s) or that is required to file the EQR under section 220 of the Federal Power Act. This name must match the name provided as a Seller’s “Company Name” in Field 2 of the ID Data (Seller Data).</label>
+      <label xlink:label="label_ferc_FERCTariffReference" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">FERC Tariff Reference</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContractBeginDate" xlink:label="ferc_ContractBeginDate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContractBeginDate" xlink:to="label_ferc_ContractBeginDate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContractBeginDate" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">First date and time for the sale of the product at the rate specified.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionBeginDate" xlink:label="ferc_TransactionBeginDate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TransactionBeginDate" xlink:to="label_ferc_TransactionBeginDate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TransactionBeginDate" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">First date and time the product is sold during the quarter.</label>
+      <label xlink:label="label_ferc_StandardizedQuantity" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">For product names energy, capacity, and booked out power only. Specify the quantity in MWh if the product is energy or booked out power and specify the quantity in MW-month if the product is capacity or booked out power</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContractExecutionDate" xlink:label="ferc_ContractExecutionDate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContractExecutionDate" xlink:to="label_ferc_ContractExecutionDate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContractExecutionDate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contract Execution Date</label>
+      <label xlink:label="label_ferc_RateDescription" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Text description of rate. If the rate is currently available on the FERC website, a citation of the FERC Accession Number and the relevant FERC tariff including page number or section may be included instead of providing the entire rate algorithm. If the rate is not available on the FERC website, include the rate algorithm, if rate is calculated. If the algorithm would exceed the 300 character field limit, it may be provided in a descriptive summary (including bases and methods of calculations) with a detailed citation of the relevant FERC tariff including page number and section.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TotalTransactionCharge" xlink:label="ferc_TotalTransactionCharge" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TotalTransactionCharge" xlink:to="label_ferc_TotalTransactionCharge" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TotalTransactionCharge" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">TotalTransactionCharge</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_Units" xlink:label="ferc_Units" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_Units" xlink:to="label_ferc_Units" xlink:type="arc"/>
+      <label xlink:label="label_ferc_Units" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Measure stated in the contract for the product sold.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionUniqueID" xlink:label="ferc_TransactionUniqueID" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TransactionUniqueID" xlink:to="label_ferc_TransactionUniqueID" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TransactionUniqueID" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transaction Unique ID</label>
+      <label xlink:label="label_ferc_ContractBeginDate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Begin Date</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContractDataTable" xlink:label="ferc_ContractDataTable" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContractDataTable" xlink:to="label_ferc_ContractDataTable" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContractDataTable" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Disclosure of information about pipeline operating revenue.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ExchangeBrokerageService" xlink:label="ferc_ExchangeBrokerageService" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ExchangeBrokerageService" xlink:to="label_ferc_ExchangeBrokerageService" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ExchangeBrokerageService" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Exchange Brokerage Service</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContactAddress" xlink:label="ferc_ContactAddress" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContactAddress" xlink:to="label_ferc_ContactAddress" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContactAddress" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contact Address</label>
+      <label xlink:label="label_ferc_ContractExecutionDate" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The date the contract was signed. If the parties signed on different dates, use the most recent date signed.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContactState" xlink:label="ferc_ContactState" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContactState" xlink:to="label_ferc_ContactState" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContactState" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contact State</label>
+      <label xlink:label="label_ferc_TotalTransactionCharge" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Transaction Quantity (Field 64) times Price (Field 65) plus Total Transmission Charge (Field 69).</label>
+      <label xlink:label="label_ferc_ActualTerminationDate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Actual Termination Date</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TimeZone" xlink:label="ferc_TimeZone" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TimeZone" xlink:to="label_ferc_TimeZone" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TimeZone" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Time Zone</label>
+      <label xlink:label="label_ferc_TransactionsReportedToIndexPricePublisher" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transactions Reported to Index Price Publisher(s)</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ExtensionProvisionDescription" xlink:label="ferc_ExtensionProvisionDescription" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ExtensionProvisionDescription" xlink:to="label_ferc_ExtensionProvisionDescription" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ExtensionProvisionDescription" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Extension Provision Description</label>
+      <label xlink:label="label_ferc_TransactionEndDate" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Last date and time the product is sold during the quarter.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_CompanyIdentifier" xlink:label="ferc_CompanyIdentifier" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_CompanyIdentifier" xlink:to="label_ferc_CompanyIdentifier" xlink:type="arc"/>
+      <label xlink:label="label_ferc_CompanyIdentifier" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">A 6-digit integer preceded by
+the letter “C” (or in case of
+Agent, it may be a 6-digit
+integer preceded by the letter
+“D”)</label>
+      <label xlink:label="label_ferc_ExchangeBrokerageService" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">If a broker service is used to consummate or effectuate a transaction, the term “Broker” shall be provided. If an exchange is used, the specific exchange that is used shall be selected from the Commission-provided list.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionUniqueIdentifier" xlink:label="ferc_TransactionUniqueIdentifier" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TransactionUniqueIdentifier" xlink:to="label_ferc_TransactionUniqueIdentifier" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TransactionUniqueIdentifier" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Unique reference number assigned by the Seller for each transaction.</label>
+      <label xlink:label="label_ferc_SellerCompanyName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Seller Company Name</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_PORSL" xlink:label="ferc_PORSL" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_PORSL" xlink:to="label_ferc_PORSL" xlink:type="arc"/>
+      <label xlink:label="label_ferc_PORSL" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Point of Receipt Specific Location (PORSL)</label>
+      <label xlink:label="label_ferc_TransactionBeginDate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transaction Begin Date</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionDataTable" xlink:label="ferc_TransactionDataTable" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TransactionDataTable" xlink:to="label_ferc_TransactionDataTable" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TransactionDataTable" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Disclosure of information about pipeline operating revenue.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContactTitle" xlink:label="ferc_ContactTitle" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContactTitle" xlink:to="label_ferc_ContactTitle" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContactTitle" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contact Title</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ScheduleEQRTransactionAbstract" xlink:label="ferc_ScheduleEQRTransactionAbstract" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ScheduleEQRTransactionAbstract" xlink:to="label_ferc_ScheduleEQRTransactionAbstract" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ScheduleEQRTransactionAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Schedule EQR Transaction [Abstract]</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_IncrementName" xlink:label="ferc_IncrementName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_IncrementName" xlink:to="label_ferc_IncrementName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_IncrementName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Increment Name</label>
+      <label xlink:label="label_ferc_ExtensionProvisionDescription" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Description of terms that provide for the continuation of the contract.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TypeOfRate" xlink:label="ferc_TypeOfRate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TypeOfRate" xlink:to="label_ferc_TypeOfRate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TypeOfRate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Type of Rate</label>
+      <label xlink:label="label_ferc_Units" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Units</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContractUniqueID" xlink:label="ferc_ContractUniqueID" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContractUniqueID" xlink:to="label_ferc_ContractUniqueID" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContractUniqueID" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">An identifier beginning with the letter “T” and followed by a number (e.g., “T1”, “T2”) used to designate a record containing transaction information. One record for each transaction record must be included in an EQR for a given quarter. A new transaction record must be used every time a price changes in a sale.</label>
+      <label xlink:label="label_ferc_TransactionUniqueIdentifier" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transaction Unique Identifier</label>
+      <label xlink:label="label_ferc_CompanyIdentifier" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Company Identifier</label>
+      <label xlink:label="label_ferc_ContractDataTable" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contract Data Table</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionQuantity" xlink:label="ferc_TransactionQuantity" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TransactionQuantity" xlink:to="label_ferc_TransactionQuantity" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TransactionQuantity" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The quantity of the product in this transaction record.</label>
+      <label xlink:label="label_ferc_TransactionDataTable" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transaction Data Table</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContactZip" xlink:label="ferc_ContactZip" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContactZip" xlink:to="label_ferc_ContactZip" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContactZip" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Zip code for the contact identified in Field Number 4.</label>
+      <label xlink:label="label_ferc_CommencementDateOfContractTerms" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Commencement Date of Contract Terms</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_IndexPricePublisher" xlink:label="ferc_IndexPricePublisher" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_IndexPricePublisher" xlink:to="label_ferc_IndexPricePublisher" xlink:type="arc"/>
+      <label xlink:label="label_ferc_IndexPricePublisher" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Index Price Publisher</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_IdentifierDataTable" xlink:label="ferc_IdentifierDataTable" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_IdentifierDataTable" xlink:to="label_ferc_IdentifierDataTable" xlink:type="arc"/>
+      <label xlink:label="label_ferc_IdentifierDataTable" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Identifier Data Table</label>
+      <label xlink:label="label_ferc_TimeZone" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The time zone in which the sale was made.</label>
+      <label xlink:label="label_ferc_ContractUniqueID" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transaction Unique ID</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_RateMaximum" xlink:label="ferc_RateMaximum" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_RateMaximum" xlink:to="label_ferc_RateMaximum" xlink:type="arc"/>
+      <label xlink:label="label_ferc_RateMaximum" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Rate Maximum</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ProductName" xlink:label="ferc_ProductName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ProductName" xlink:to="label_ferc_ProductName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ProductName" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Description of product being offered.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TermName" xlink:label="ferc_TermName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TermName" xlink:to="label_ferc_TermName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TermName" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Contracts or Power sales transactions with durations of one year or greater are longterm. Transactions with shorter durations are short-term.</label>
+      <label xlink:label="label_ferc_ContactState" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Two character state or province abbreviation for the contact identified in Field Number 4.</label>
+      <label xlink:label="label_ferc_ContactTitle" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Title of contact identified in Field Number 4.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TotalTransmissionCharge" xlink:label="ferc_TotalTransmissionCharge" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TotalTransmissionCharge" xlink:to="label_ferc_TotalTransmissionCharge" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TotalTransmissionCharge" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Payments received for transmission services when explicitly identified.</label>
+      <label xlink:label="label_ferc_ContactAddress" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Street address for contact identified in Field Number 4.</label>
+      <label xlink:label="label_ferc_PORSL" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The specific location at which the product is received if designated in the contract. If receipt occurs at a trading hub, a standardized hub name must be used. If more points of receipt are listed in the contract than can fit into the 50 character space, a description of the collection of points may be used. ‘Various,’ alone, is unacceptable unless the contract itself uses that terminology.</label>
+      <label xlink:label="label_ferc_TransactionUniqueID" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">An identifier beginning with the letter “T” and followed by a number (e.g., “T1”, “T2”) used to designate a record containing transaction information. One record for each transaction record must be included in an EQR for a given quarter. A new transaction record must be used every time a price changes in a sale.</label>
+      <label xlink:label="label_ferc_IndexPricePublisher" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The index price publisher(s) to which sales transactions have been reported.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_PORBA" xlink:label="ferc_PORBA" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_PORBA" xlink:to="label_ferc_PORBA" xlink:type="arc"/>
+      <label xlink:label="label_ferc_PORBA" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The registered Balancing Authority (formerly called NERC Control Area) where service begins for a transmission or transmission-related jurisdictional sale. The Balancing Authority will be identified with the abbreviation used in OASIS applications. If receipt occurs at a trading hub, the term “Hub” should be used.</label>
+      <label xlink:label="label_ferc_ContractEndDate" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Last date and time for the sale of the product at the rate specified.</label>
+      <label xlink:label="label_ferc_IdentifierDataTable" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Disclosure of information about pipeline operating revenue.</label>
+      <label xlink:label="label_ferc_ContractDataLineItems" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Line items represent financial concepts included in the table. The following line items relate to EQR Transactions</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ProductTypeName" xlink:label="ferc_ProductTypeName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ProductTypeName" xlink:to="label_ferc_ProductTypeName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ProductTypeName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Product Type Name</label>
+      <label xlink:label="label_ferc_ContactName" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">(Seller) – The name of the contact for the company authorized to make sales as indicated in the company’s FERC tariff(s) or that is required to file the EQR under section 220 of the Federal Power Act. (Agent) – Name of the person who prepared the filing</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_Rate" xlink:label="ferc_Rate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_Rate" xlink:to="label_ferc_Rate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_Rate" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The charge for the product per unit as stated in the contract.</label>
+      <label xlink:label="label_ferc_ContactZip" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contact Zip</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_RateMinimum" xlink:label="ferc_RateMinimum" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_RateMinimum" xlink:to="label_ferc_RateMinimum" xlink:type="arc"/>
+      <label xlink:label="label_ferc_RateMinimum" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Minimum rate to be charged per the contract, if a range is specified.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_Price" xlink:label="ferc_Price" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_Price" xlink:to="label_ferc_Price" xlink:type="arc"/>
+      <label xlink:label="label_ferc_Price" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Price</label>
+      <label xlink:label="label_ferc_TransactionQuantity" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transaction Quantity</label>
+      <label xlink:label="label_ferc_PORBA" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Point of Receipt Balancing Authority(PORBA)</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContractAffiliate" xlink:label="ferc_ContractAffiliate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContractAffiliate" xlink:to="label_ferc_ContractAffiliate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContractAffiliate" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The customer is an affiliate if it controls, is controlled by, or is under common control with the seller. This includes a division that operates as a functional unit. A customer of a seller who is an Exempt Wholesale Generator may be defined as an affiliate under the Public Utility Holding Company Act and the FPA.</label>
+      <label xlink:label="label_ferc_StandardizedPrice" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">For product names energy, capacity, and booked out power only.
+Specify the price in $/MWh if the product is energy or booked out
+power and specify the price in $/MW-month if the product is capacity
+or booked out power.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_CustomerCompanyName" xlink:label="ferc_CustomerCompanyName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_CustomerCompanyName" xlink:to="label_ferc_CustomerCompanyName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_CustomerCompanyName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Customer Company Name</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContactCountryName" xlink:label="ferc_ContactCountryName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContactCountryName" xlink:to="label_ferc_ContactCountryName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContactCountryName" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Country (USA, Canada, Mexico, or United Kingdom) for contact address identified in Field Number 4.</label>
+      <label xlink:label="label_ferc_Rate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Rate</label>
+      <label xlink:label="label_ferc_IdentifierDataLineItems" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Identifier Data [Line Items]</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContactEMail" xlink:label="ferc_ContactEMail" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContactEMail" xlink:to="label_ferc_ContactEMail" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContactEMail" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contact E-Mail</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContractTerminationDate" xlink:label="ferc_ContractTerminationDate" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ContractTerminationDate" xlink:to="label_ferc_ContractTerminationDate" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ContractTerminationDate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contract Termination Date</label>
+      <label xlink:label="label_ferc_Quantity" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Quantity for the contract product identified.</label>
+      <label xlink:label="label_ferc_FilingQuarter" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">A six digit reference number used by the EQR system to indicate the quarter and year of the filing. The first 4 numbers represent the year (e.g., 2007). The last 2 numbers represent the last month of the quarter (e.g., 03=1st quarter; 06=2nd quarter, 09=3rd quarter, 12= 4th quarter).</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionsReported" xlink:label="ferc_TransactionsReported" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_TransactionsReported" xlink:to="label_ferc_TransactionsReported" xlink:type="arc"/>
+      <label xlink:label="label_ferc_TransactionsReported" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transactions Reported</label>
+      <label xlink:label="label_ferc_ProductName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Product Name</label>
+      <label xlink:label="label_ferc_Price" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Actual price charged for the product per unit. The price reported cannot be averaged or otherwise aggregated</label>
+      <label xlink:label="label_ferc_ContactEMail" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">E-mail address of contact identified in Field Number 4.</label>
+      <label xlink:label="label_ferc_ContactPhone" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contact Phone</label>
+      <label xlink:label="label_ferc_TotalTransmissionCharge" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Total Transmission Charge</label>
+      <label xlink:label="label_ferc_TermName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Term Name</label>
+      <label xlink:label="label_ferc_ContractAffiliate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contract Affiliate</label>
+      <label xlink:label="label_ferc_TransactionDataLineItems" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transaction Data [Line Items]</label>
+      <label xlink:label="label_ferc_CustomerCompanyName" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The name of the purchaser of contract products and services.</label>
+      <label xlink:label="label_ferc_ContactCountryName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contact Country Name</label>
+      <label xlink:label="label_ferc_PODBA" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Point of Delivery Balancing Authority</label>
+      <label xlink:label="label_ferc_TradeDate" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Trade Date</label>
+      <label xlink:label="label_ferc_ContractTerminationDate" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">The date the contract was signed. If the parties signed on different dates, use the most recent date signed.</label>
+      <label xlink:label="label_ferc_RateUnits" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Rate Units</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_IncrementPeakingName" xlink:label="ferc_IncrementPeakingName" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_IncrementPeakingName" xlink:to="label_ferc_IncrementPeakingName" xlink:type="arc"/>
+      <label xlink:label="label_ferc_IncrementPeakingName" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Increment Peaking Name</label>
+      <label xlink:label="label_ferc_TransactionsReported" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Description of the types of transactions reported to the index publisher identified in this record.</label>
+      <label xlink:label="label_ferc_RateMaximum" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:type="resource" xml:lang="en">Maximum rate to be charged per the contract, if a range is specified.</label>
+      <loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ScheduleEQRContractAbstract" xlink:label="ferc_ScheduleEQRContractAbstract" xlink:type="locator"/>
+      <labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ferc_ScheduleEQRContractAbstract" xlink:to="label_ferc_ScheduleEQRContractAbstract" xlink:type="arc"/>
+      <label xlink:label="label_ferc_ScheduleEQRContractAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Schedule EQR Transaction [Abstract]</label>
+      <label xlink:label="label_ferc_RateMinimum" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Rate Minimum</label>
+      <link:label id="id_148a9b85" xlink:label="lbl_label1420765212" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Identifier Data [Axis]</link:label>
+      <link:loc xlink:href="ferc-core_2021-01-01.xsd#ferc_IdentifierDataAxis" xlink:label="lbl_IdentifierDataAxis" xlink:type="locator"/>
+      <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_IdentifierDataAxis" xlink:to="lbl_label1420765212" xlink:type="arc"/>
+      <link:label id="id_45e2bbde" xlink:label="lbl_label1629946667" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Contract Data [Axis]</link:label>
+      <link:loc xlink:href="ferc-core_2021-01-01.xsd#ferc_ContractDataAxis" xlink:label="lbl_ContractDataAxis" xlink:type="locator"/>
+      <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_ContractDataAxis" xlink:to="lbl_label1629946667" xlink:type="arc"/>
+      <link:label id="id_12f22acb" xlink:label="lbl_label1549793198" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Transaction Data [Axis]</link:label>
+      <link:loc xlink:href="ferc-core_2021-01-01.xsd#ferc_TransactionDataAxis" xlink:label="lbl_TransactionDataAxis" xlink:type="locator"/>
+      <link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="lbl_TransactionDataAxis" xlink:to="lbl_label1549793198" xlink:type="arc"/>
+   </labelLink>
+</linkbase>

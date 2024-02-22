@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--Initial EQR taxonomy-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:eqr-footnote-roles="http://www.ferc.gov/eqr/roles/footnote" xmlns:eqr-lab-roles="http://www.ferc.gov/eqr/roles/label" xmlns:eqr-parts="http://www.ferc.gov/eqr/parts" xmlns:eqr-ref-roles="http://www.ferc.gov/eqr/roles/reference" xmlns:eqr-types="http://www.ferc.gov/eqr/types" xmlns:ferc="http://www.ferc.gov/eqr/2021-01-01/ferc" xmlns:iod="http://disclosure.edinet-fsa.go.jp/taxonomy/common/2013-03-31/iod" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:srt-types="http://fasb.org/srt-types/2019-01-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" attributeFormDefault="unqualified" blockDefault="" elementFormDefault="qualified" finalDefault="" targetNamespace="http://www.ferc.gov/eqr/2021-01-01/ferc">
+   <xs:annotation>
+      <xs:documentation>This schema contains core elements for the FERC EQR Test taxonomy.</xs:documentation>
+      <xs:appinfo>
+            <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="eqr-core_2021-01-01_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+            <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="eqr-core-ref-account_2021-01-01_ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:type="simple"/>
+            <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="eqr-core-ref-element-sequence_2021-01-01_ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:type="simple"/>
+            <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="eqr-core-ref-column-details_2021-01-01_ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:type="simple"/>
+            <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="eqr-core-ref-form-validation_2021-01-01_ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:type="simple"/>
+        </xs:appinfo>
+   </xs:annotation>
+   <xs:import namespace="http://fasb.org/srt-types/2019-01-31" schemaLocation="http://xbrl.fasb.org/srt/2019/elts/srt-types-2019-01-31.xsd"/>
+   <xs:import namespace="http://www.ferc.gov/eqr/parts" schemaLocation="eqr-core-ref-parts_2021-01-01.xsd"/>
+   <xs:import namespace="http://www.ferc.gov/eqr/roles/footnote" schemaLocation="eqr-core-footnote-roles_2021-01-01.xsd"/>
+   <xs:import namespace="http://www.ferc.gov/eqr/roles/label" schemaLocation="eqr-core-lab-roles_2021-01-01.xsd"/>
+   <xs:import namespace="http://www.ferc.gov/eqr/roles/reference" schemaLocation="eqr-core-ref-roles_2021-01-01.xsd"/>
+   <xs:import namespace="http://www.ferc.gov/eqr/types" schemaLocation="eqr-core-types_2021-01-01.xsd"/>
+   <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+   <xs:import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd"/>
+   <xs:import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd"/>
+   <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+   <xs:element abstract="false" id="ferc_ActualTerminationDate" name="ActualTerminationDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ClassName" name="ClassName" nillable="true" substitutionGroup="xbrli:item" type="ferc:classNameItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_CommencementDateOfContractTerms" name="CommencementDateOfContractTerms" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_CompanyIdentifier" name="CompanyIdentifier" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_CompanyName" name="CompanyName" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContactAddress" name="ContactAddress" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContactCountryName" name="ContactCountryName" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContactEMail" name="ContactEMail" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContactName" name="ContactName" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContactPhone" name="ContactPhone" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContactState" name="ContactState" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContactTitle" name="ContactTitle" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContactZip" name="ContactZip" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContractAffiliate" name="ContractAffiliate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:booleanItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContractBeginDate" name="ContractBeginDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContractDataDomain" name="ContractDataDomain" nillable="false" type="xs:token"/>
+   <xs:element abstract="true" id="ferc_ContractDataLineItems" name="ContractDataLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="true" id="ferc_ContractDataTable" name="ContractDataTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContractEndDate" name="ContractEndDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContractExecutionDate" name="ContractExecutionDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContractServiceAgreementID" name="ContractServiceAgreementID" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContractTerminationDate" name="ContractTerminationDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ContractUniqueID" name="ContractUniqueID" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_CustomerCompanyName" name="CustomerCompanyName" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ExchangeBrokerageService" name="ExchangeBrokerageService" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ExtensionProvisionDescription" name="ExtensionProvisionDescription" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_FERCTariffReference" name="FERCTariffReference" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_FilerUniqueIdentifier" name="FilerUniqueIdentifier" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_FilingQuarter" name="FilingQuarter" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_IdentifierDataDomain" name="IdentifierDataDomain" nillable="false" type="xs:token"/>
+   <xs:element abstract="true" id="ferc_IdentifierDataLineItems" name="IdentifierDataLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="true" id="ferc_IdentifierDataTable" name="IdentifierDataTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_IncrementName" name="IncrementName" nillable="true" substitutionGroup="xbrli:item" type="ferc:incrementNameItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_IncrementPeakingName" name="IncrementPeakingName" nillable="true" substitutionGroup="xbrli:item" type="ferc:incrementPeakingNameItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_IndexPricePublisher" name="IndexPricePublisher" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_PODBA" name="PODBA" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_PODSL" name="PODSL" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_PORBA" name="PORBA" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_PORSL" name="PORSL" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_Price" name="Price" nillable="true" substitutionGroup="xbrli:item" type="xbrli:decimalItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ProductName" name="ProductName" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_ProductTypeName" name="ProductTypeName" nillable="true" substitutionGroup="xbrli:item" type="ferc:productTypeNameItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_Quantity" name="Quantity" nillable="true" substitutionGroup="xbrli:item" type="xbrli:decimalItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_Rate" name="Rate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:decimalItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_RateDescription" name="RateDescription" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_RateMaximum" name="RateMaximum" nillable="true" substitutionGroup="xbrli:item" type="xbrli:decimalItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_RateMinimum" name="RateMinimum" nillable="true" substitutionGroup="xbrli:item" type="xbrli:decimalItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_RateUnits" name="RateUnits" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="true" id="ferc_ScheduleEQRContractAbstract" name="ScheduleEQRContractAbstract" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="true" id="ferc_ScheduleEQRIdentifierAbstract" name="ScheduleEQRIdentifierAbstract" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="true" id="ferc_ScheduleEQRTransactionAbstract" name="ScheduleEQRTransactionAbstract" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_SellerCompanyName" name="SellerCompanyName" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_StandardizedPrice" name="StandardizedPrice" nillable="true" substitutionGroup="xbrli:item" type="xbrli:decimalItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_StandardizedQuantity" name="StandardizedQuantity" nillable="true" substitutionGroup="xbrli:item" type="xbrli:decimalItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TermName" name="TermName" nillable="true" substitutionGroup="xbrli:item" type="ferc:termNameItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TimeZone" name="TimeZone" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TotalTransactionCharge" name="TotalTransactionCharge" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TotalTransmissionCharge" name="TotalTransmissionCharge" nillable="true" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TradeDate" name="TradeDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TransactionBeginDate" name="TransactionBeginDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TransactionDataDomain" name="TransactionDataDomain" nillable="false" type="xs:token"/>
+   <xs:element abstract="true" id="ferc_TransactionDataLineItems" name="TransactionDataLineItems" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="true" id="ferc_TransactionDataTable" name="TransactionDataTable" nillable="true" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TransactionEndDate" name="TransactionEndDate" nillable="true" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TransactionQuantity" name="TransactionQuantity" nillable="true" substitutionGroup="xbrli:item" type="xbrli:decimalItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TransactionUniqueID" name="TransactionUniqueID" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TransactionUniqueIdentifier" name="TransactionUniqueIdentifier" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TransactionsReported" name="TransactionsReported" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TransactionsReportedToIndexPricePublisher" name="TransactionsReportedToIndexPricePublisher" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TypeOfRate" name="TypeOfRate" nillable="true" substitutionGroup="xbrli:item" type="ferc:rateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_Units" name="Units" nillable="true" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:complexType abstract="false" mixed="false" name="classNameItemType">
+      <xs:simpleContent>
+         <xs:restriction base="xbrli:tokenItemType"/>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType abstract="false" mixed="false" name="incrementNameItemType">
+      <xs:simpleContent>
+         <xs:restriction base="xbrli:tokenItemType"/>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType abstract="false" mixed="false" name="incrementPeakingNameItemType">
+      <xs:simpleContent>
+         <xs:restriction base="xbrli:tokenItemType"/>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType abstract="false" mixed="false" name="productTypeNameItemType">
+      <xs:simpleContent>
+         <xs:restriction base="xbrli:tokenItemType"/>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType abstract="false" mixed="false" name="rateItemType">
+      <xs:simpleContent>
+         <xs:restriction base="xbrli:tokenItemType"/>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType abstract="false" mixed="false" name="termNameItemType">
+      <xs:simpleContent>
+         <xs:restriction base="xbrli:tokenItemType"/>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:element abstract="true" id="ferc_IdentifierDataAxis" name="IdentifierDataAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrldt:typedDomainRef="#ferc_IdentifierDataDomain.domain" xbrli:periodType="duration"/>
+   <xs:element abstract="true" id="ferc_ContractDataAxis" name="ContractDataAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrldt:typedDomainRef="#ferc_ContractDataDomain.domain" xbrli:periodType="duration"/>
+   <xs:element abstract="true" id="ferc_TransactionDataAxis" name="TransactionDataAxis" nillable="true" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" xbrldt:typedDomainRef="#ferc_TransactionDataDomain.domain" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="ferc_TransactionDataDomain.domain" name="TransactionDataDomain.domain" nillable="false" type="xs:token"/>
+   <xs:element abstract="false" id="ferc_IdentifierDataDomain.domain" name="IdentifierDataDomain.domain" nillable="false" type="xs:token"/>
+   <xs:element abstract="false" id="ferc_ContractDataDomain.domain" name="ContractDataDomain.domain" nillable="false" type="xs:token"/>
+</xs:schema>

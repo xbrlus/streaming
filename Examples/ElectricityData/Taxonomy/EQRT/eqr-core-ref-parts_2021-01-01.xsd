@@ -1,0 +1,202 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ferc-part="http://www.ferc.gov/eqr/parts" targetNamespace="http://www.ferc.gov/eqr/parts" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:annotation>
+		<xs:documentation> This schem defines reference roles and parts </xs:documentation>
+		<xs:appinfo> </xs:appinfo>
+	</xs:annotation>
+	<xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+	<xs:element name="Form" type="xs:token" substitutionGroup="link:part" id="ferc-part_Form">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Form</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Schedule" type="xs:token" substitutionGroup="link:part" id="ferc-part_Schedule">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Schedule</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Row" type="xs:token" substitutionGroup="link:part" id="ferc-part_Row">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Row</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RowStart" type="xs:token" substitutionGroup="link:part" id="ferc-part_RowStart">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Row Start</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RowEnd" type="xs:token" substitutionGroup="link:part" id="ferc-part_RowEnd">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Row End</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Column" type="xs:token" substitutionGroup="link:part" id="ferc-part_Column">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Column</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Period" substitutionGroup="link:part" id="ferc-part_Period">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Period</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:enumeration value="Current"/>
+				<xs:enumeration value="Prior"/>
+				<xs:enumeration value="Prior2"/>
+				<xs:enumeration value="prior12MonthsInstant"/>
+				<xs:enumeration value="prior24MonthsInstant"/>
+				<xs:enumeration value="Current 3M"/>
+				<xs:enumeration value="Prior 3M"/>
+				<xs:enumeration value="QYCurrent"/>
+				<xs:enumeration value="QYPrior"/>
+				<xs:enumeration value="Month1"/>
+				<xs:enumeration value="Month2"/>
+				<xs:enumeration value="Month3"/>
+				<xs:enumeration value="Quarter1"/>
+				<xs:enumeration value="Quarter2"/>
+				<xs:enumeration value="Quarter3"/>
+				<xs:enumeration value="Quarter4"/>
+				<xs:enumeration value="CumQuarter1"/>
+				<xs:enumeration value="CumQuarter2"/>
+				<xs:enumeration value="CumQuarter3"/>
+				<xs:enumeration value="CumQuarter4"/>
+				<xs:enumeration value="3D"/>
+				<xs:enumeration value="Hour"/>
+				<xs:enumeration value="Day"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="Sign" substitutionGroup="link:part" id="ferc-part_Sign">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Sign</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:enumeration value="Negate"/>
+				<xs:enumeration value="Positive"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Dimension" type="xs:token" substitutionGroup="link:part" id="ferc-part_Dimension">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Dimension</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ValueType" substitutionGroup="link:part" id="ferc-part_ValueType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Value Type</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:enumeration value="Value"/>
+				<xs:enumeration value="Label"/>
+				<xs:enumeration value="Account"/>
+				<xs:enumeration value="Column"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ColumnName" type="xs:token" substitutionGroup="link:part" id="ferc-part_ColumnName">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Column Name</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ElementName" type="xs:token" substitutionGroup="link:part" id="ferc-part_ElementName">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Column Element</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Account" type="xs:token" substitutionGroup="link:part" id="ferc-part_Account">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Account</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ScheduleRole" type="xs:anyURI" substitutionGroup="link:part" id="ferc-part_ScheduleRole">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Schedule Role</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="SequenceRole" type="xs:anyURI" substitutionGroup="link:part" id="ferc-part_SequenceRole">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Sequence Role</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="SequenceDimension" type="xs:anyURI" substitutionGroup="link:part" id="ferc-part_SequenceDimension">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Sequence Dimension</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RuleDescription" type="xs:string" substitutionGroup="link:part" id="ferc-part_RuleDescription">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Rule Description</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RuleIdentifier" type="xs:token" substitutionGroup="link:part" id="ferc-part_RuleIdentifier">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Rule Identifier</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RuleFocus" type="xs:token" substitutionGroup="link:part" id="ferc-part_RuleFocus">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Rule Focus</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RuleLogic" type="xs:string" substitutionGroup="link:part" id="ferc-part_RuleLogic">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Rule Logic</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RuleMessage" type="xs:string" substitutionGroup="link:part" id="ferc-part_RuleMessage">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Rule Message</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RuleSeverity" substitutionGroup="link:part" id="ferc-part_RuleSeverity">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Rule Severity</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:enumeration value="error"/>
+				<xs:enumeration value="warning"/>
+				<xs:enumeration value="ok"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="RuleCondition" substitutionGroup="link:part" id="ferc-part_RuleCondition">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Rule Condition</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:enumeration value="satisfied"/>
+				<xs:enumeration value="unsatisfied"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="DoNotConvert" type="xs:token" substitutionGroup="link:part" id="ferc-part_DoNotConvert">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Do Not Convert - Indicates that the reference should not be used for data coversion</xs:documentation>
+		</xs:annotation>
+	</xs:element>	
+	<xs:element name="SupplementDimension" type="xs:token" substitutionGroup="link:part" id="ferc-part_SupplementDimension">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Indicates the use of a dimension for additional supllemental pages in the VFP database.</xs:documentation>
+		</xs:annotation>
+	</xs:element>	
+	<xs:element name="MemberValue" type="xs:string" substitutionGroup="link:part" id="ferc-part_MemberValue">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Indicates the specific name of a member(s) to use with a typed dimension(s).  The member defined is the field name from the VFP database. This part is used for the conversion of historical data only. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="FixedMember" type="xs:string" substitutionGroup="link:part" id="ferc-part_FixedMember">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Indicates the specific name of a member(s) to use with a typed dimension(s).  The member defined is defined in the taxonomy. This part is used for the conversion of historical data only. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="MigrateOnly" type="xs:token" substitutionGroup="link:part" id="ferc-part_MigrateOnly">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Indicates that this reference is only for data migration.</xs:documentation>
+		</xs:annotation>
+	</xs:element>			
+</xs:schema>

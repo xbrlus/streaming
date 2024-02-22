@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:Identification="http://www.ferc.gov/eqr/2020-01-01/Identification" xmlns:Transactions="http://ferc.gov/eqr/2020-01-01/Transactions" xmlns:contracts="http://www.ferc.gov/eqr/2020-01-01/Contracts" xmlns:eqr-all="http://www.ferc.gov/eqr/2020-01-01/ferc-all" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" attributeFormDefault="unqualified" blockDefault="" elementFormDefault="qualified" finalDefault="" targetNamespace="http://www.ferc.gov/eqr/2020-01-01/ferc-all">
+   <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+   <xs:annotation>
+      <xs:appinfo>
+         <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ferc-all_2021-01-01_lab_en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:import namespace="http://ferc.gov/eqr/2020-01-01/Transactions" schemaLocation="trans/eqr-trans_2021-01-01.xsd"/>
+   <xs:import namespace="http://www.ferc.gov/eqr/2020-01-01/Contracts" schemaLocation="con/eqr-con_2021-01-01.xsd"/>
+   <xs:import namespace="http://www.ferc.gov/eqr/2020-01-01/Identification" schemaLocation="id/eqr-id2021-01-01.xsd"/>
+   <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+</xs:schema>
