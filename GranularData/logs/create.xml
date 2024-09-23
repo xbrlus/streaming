@@ -10,16 +10,52 @@
  <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
  <ref href="serializer"/></entry>
 <entry code="info" level="info">
- <message>[info] Xule version: 3.0.23759 - </message>
+ <message>[info] Xule version: 3.0.30029 - </message>
  <ref href=""/></entry>
 <entry code="info" level="info">
- <message>[info] loaded in 0.51 secs at 2024-06-27T17:52:22 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <message>[info] loaded in 0.04 secs at 2024-09-23T12:23:05 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
  <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
 <entry code="xule:error" level="error">
- <message cid="4344836944">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <message cid="4570477296">[xule:error] rule create_event_type_dimension: Rule: create_event_type_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
  <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4570477296">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_event_type_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}eventDimensionItemType" type-parent="{http://www.xbrl.org/2003/instance}stringItemType" severity="info" cid="4570477296">[create_event_type_dimension] True - </message></entry>
 <entry code="create_granular_taxonomy" level="info">
- <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;/Users/campbellpryde/Documents/GitHub/streaming/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4344836944">[create_granular_taxonomy] True - </message></entry>
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4570477296">[create_granular_taxonomy] True - </message></entry>
+<entry code="XodelWarning" level="info">
+ <message>[XodelWarning] Output Attribute 'type-parent' is not valid for value '{http://www.xbrl.org/2003/instance}strin'. Cannot find arelle model object. Did you use the .to-xodel property Found in rule create_event_type_dimension - </message>
+ <ref href=""/></entry>
+</log>
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL rule processor (xule) successful, version Check version using Tools->Xule->Version on the GUI or --xule-version on the command line. - xule </message>
+ <ref href="xule"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in Xince and Xodel successful, version 1.0. - xodel </message>
+ <ref href="xodel"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
+ <ref href="serializer"/></entry>
+<entry code="info" level="info">
+ <message>[info] Xule version: 3.0.30029 - </message>
+ <ref href=""/></entry>
+<entry code="info" level="info">
+ <message>[info] loaded in 0.05 secs at 2024-09-23T12:24:10 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4428034080">[xule:error] rule create_event_type_dimension: Rule: create_event_type_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4428034080">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_event_type_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}eventDimensionItemType" type-parent-name="{http://www.xbrl.org/2003/instance}stringItemType" severity="info" cid="4428034080">[create_event_type_dimension] True - </message></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4428034080">[create_granular_taxonomy] True - </message></entry>
 <entry code="Serializer" level="info">
  <message>[Serializer] Writing package /Users/campbellpryde/Documents/GitHub/streaming/GranularData/output/GranularTaxonomy.zip - </message>
  <ref href=""/></entry>
@@ -36,15 +72,26 @@
  <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
  <ref href="serializer"/></entry>
 <entry code="info" level="info">
- <message>[info] Xule version: 3.0.23759 - </message>
+ <message>[info] Xule version: 3.0.30029 - </message>
  <ref href=""/></entry>
 <entry code="info" level="info">
- <message>[info] loaded in 0.05 secs at 2024-06-27T17:54:51 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <message>[info] loaded in 0.07 secs at 2024-09-23T12:58:15 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
  <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4376384896">[xule:error] rule create_event_type_dimension: Rule: create_event_type_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4376384896">[xule:error] rule create_event_type_element: Rule: create_event_type_element - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4376384896">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_event_type_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}eventDimensionItemType" type-parent-name="{http://www.xbrl.org/2003/instance}stringItemType" severity="info" cid="4376384896">[create_event_type_dimension] True - </message></entry>
+<entry code="create_event_type_element" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}myelement" type-parent-name="{http://www.w3.org/2001/XMLSchema}string" severity="info" cid="4376384896">[create_event_type_element] True - </message></entry>
 <entry code="create_granular_taxonomy" level="info">
- <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" import2-url="/Users/campbellpryde/Documents/GitHub/streaming/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4417299968">[create_granular_taxonomy] True - </message></entry>
-<entry code="create_granular_taxonomy" level="info">
- <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" import2-url="/Users/campbellpryde/Documents/GitHub/streaming/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4417299968">[create_granular_taxonomy] True - </message></entry>
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4376384896">[create_granular_taxonomy] True - </message></entry>
 <entry code="Serializer" level="info">
  <message>[Serializer] Writing package /Users/campbellpryde/Documents/GitHub/streaming/GranularData/output/GranularTaxonomy.zip - </message>
  <ref href=""/></entry>
@@ -61,16 +108,242 @@
  <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
  <ref href="serializer"/></entry>
 <entry code="info" level="info">
- <message>[info] Xule version: 3.0.23759 - </message>
+ <message>[info] Xule version: 3.0.30029 - </message>
  <ref href=""/></entry>
 <entry code="info" level="info">
- <message>[info] loaded in 0.08 secs at 2024-06-27T17:58:50 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <message>[info] loaded in 0.06 secs at 2024-09-23T13:02:45 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
  <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
 <entry code="xule:error" level="error">
- <message cid="4838767168">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <message cid="4455698496">[xule:error] rule create_event_type_dimension: Rule: create_event_type_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
  <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4455698496">[xule:error] rule create_event_type_element: Rule: create_event_type_element - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4455698496">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_event_type_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}eventDimensionItemType" type-parent-name="{http://www.xbrl.org/2003/instance}stringItemType" severity="info" cid="4455698496">[create_event_type_dimension] True - </message></entry>
+<entry code="create_event_type_element" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" part-name="{http://www.xbrl.org/2024/granular}myelement" part-data-type="{http://www.w3.org/2001/XMLSchema}string" part-id="mystring" severity="info" cid="4455698496">[create_event_type_element] True - </message></entry>
 <entry code="create_granular_taxonomy" level="info">
- <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4838767168">[create_granular_taxonomy] True - </message></entry>
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4455698496">[create_granular_taxonomy] True - </message></entry>
+<entry code="Serializer" level="info">
+ <message>[Serializer] Writing package /Users/campbellpryde/Documents/GitHub/streaming/GranularData/output/GranularTaxonomy.zip - </message>
+ <ref href=""/></entry>
+</log>
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL rule processor (xule) successful, version Check version using Tools->Xule->Version on the GUI or --xule-version on the command line. - xule </message>
+ <ref href="xule"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in Xince and Xodel successful, version 1.0. - xodel </message>
+ <ref href="xodel"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
+ <ref href="serializer"/></entry>
+<entry code="info" level="info">
+ <message>[info] Xule version: 3.0.30029 - </message>
+ <ref href=""/></entry>
+<entry code="info" level="info">
+ <message>[info] loaded in 0.06 secs at 2024-09-23T14:44:25 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4495226688">[xule:error] rule create_event_dimension: Rule: create_event_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4495226688">[xule:error] rule create_event_type_dimension: Rule: create_event_type_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4495226688">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_event_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" concept="modelConcept[1713, qname: ferc:TransactionDataAxis, type: xbrli:stringItemType, abstract: true, ferc-core_2021-01-01.xsd, line 1..." concept-data-type="{http://www.xbrl.org/2024/granular}eventDimensionItemType" concept-local-name="TransactionDataAxis2" severity="info" cid="4495226688">[create_event_dimension] ferc:TransactionDataAxis - </message></entry>
+<entry code="create_event_type_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}eventDimensionItemType" type-parent-name="{http://www.xbrl.org/2003/instance}stringItemType" severity="info" cid="4495226688">[create_event_type_dimension] True - </message></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4495226688">[create_granular_taxonomy] True - </message></entry>
+<entry code="XodelWarning" level="info">
+ <message>[XodelWarning] Output Attribute 'concept' is not valid for value 'modelConcept[1713, qname: ferc:Transacti'. Cannot find arelle model object. Did you use the .to-xodel property Found in rule create_event_dimension - </message>
+ <ref href=""/></entry>
+</log>
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL rule processor (xule) successful, version Check version using Tools->Xule->Version on the GUI or --xule-version on the command line. - xule </message>
+ <ref href="xule"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in Xince and Xodel successful, version 1.0. - xodel </message>
+ <ref href="xodel"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
+ <ref href="serializer"/></entry>
+<entry code="info" level="info">
+ <message>[info] Xule version: 3.0.30029 - </message>
+ <ref href=""/></entry>
+<entry code="info" level="info">
+ <message>[info] loaded in 0.05 secs at 2024-09-23T14:44:41 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4382040448">[xule:error] rule create_event_dimension: Rule: create_event_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4382040448">[xule:error] rule create_event_type_dimension: Rule: create_event_type_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4382040448">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_event_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" concept="[4497937648, &quot;__1713&quot;]" concept-data-type="{http://www.xbrl.org/2024/granular}eventDimensionItemType" concept-local-name="TransactionDataAxis2" severity="info" cid="4382040448">[create_event_dimension] ferc:TransactionDataAxis - </message></entry>
+<entry code="create_event_type_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}eventDimensionItemType" type-parent-name="{http://www.xbrl.org/2003/instance}stringItemType" severity="info" cid="4382040448">[create_event_type_dimension] True - </message></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4382040448">[create_granular_taxonomy] True - </message></entry>
+<entry code="Serializer" level="warning">
+ <message>[Serializer] Component has namespace http://www.ferc.gov/eqr/2021-01-01/ferc which does not match the target namespace http://www.xbrl.org/2024/granular for document granular.xsd - </message>
+ <ref href=""/></entry>
+</log>
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL rule processor (xule) successful, version Check version using Tools->Xule->Version on the GUI or --xule-version on the command line. - xule </message>
+ <ref href="xule"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in Xince and Xodel successful, version 1.0. - xodel </message>
+ <ref href="xodel"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
+ <ref href="serializer"/></entry>
+<entry code="info" level="info">
+ <message>[info] Xule version: 3.0.30029 - </message>
+ <ref href=""/></entry>
+<entry code="info" level="info">
+ <message>[info] loaded in 0.05 secs at 2024-09-23T14:46:35 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4480334976">[xule:error] rule create_event_dimension: Rule: create_event_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4480334976">[xule:error] rule create_event_type_dimension: Rule: create_event_type_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4480334976">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_event_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" concept="[4508261776, &quot;__1713&quot;]" concept-data-type="{http://www.xbrl.org/2024/granular}eventDimensionItemType" concept-name="{http://www.xbrl.org/2024/granular}TransactionDataAxis2" severity="info" cid="4480334976">[create_event_dimension] ferc:TransactionDataAxis - </message></entry>
+<entry code="create_event_type_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}eventDimensionItemType" type-parent-name="{http://www.xbrl.org/2003/instance}stringItemType" severity="info" cid="4480334976">[create_event_type_dimension] True - </message></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4480334976">[create_granular_taxonomy] True - </message></entry>
+<entry code="Serializer" level="info">
+ <message>[Serializer] Writing package /Users/campbellpryde/Documents/GitHub/streaming/GranularData/output/GranularTaxonomy.zip - </message>
+ <ref href=""/></entry>
+</log>
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL rule processor (xule) successful, version Check version using Tools->Xule->Version on the GUI or --xule-version on the command line. - xule </message>
+ <ref href="xule"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in Xince and Xodel successful, version 1.0. - xodel </message>
+ <ref href="xodel"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
+ <ref href="serializer"/></entry>
+<entry code="info" level="info">
+ <message>[info] Xule version: 3.0.30029 - </message>
+ <ref href=""/></entry>
+<entry code="info" level="info">
+ <message>[info] loaded in 0.06 secs at 2024-09-23T14:49:47 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4453058944">[xule:error] rule create_event_dimension: Rule: create_event_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4453058944">[xule:error] rule create_event_type_dimension: Rule: create_event_type_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4453058944">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_event_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" concept="[4329697408, &quot;__1713&quot;]" concept-name="{http://www.xbrl.org/2024/granular}TransactionDataAxis2" severity="info" cid="4453058944">[create_event_dimension] ferc:TransactionDataAxis - </message></entry>
+<entry code="create_event_type_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}eventDimensionItemType" type-parent-name="{http://www.xbrl.org/2003/instance}stringItemType" severity="info" cid="4453058944">[create_event_type_dimension] True - </message></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4453058944">[create_granular_taxonomy] True - </message></entry>
+<entry code="Serializer" level="info">
+ <message>[Serializer] Writing package /Users/campbellpryde/Documents/GitHub/streaming/GranularData/output/GranularTaxonomy.zip - </message>
+ <ref href=""/></entry>
+</log>
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL rule processor (xule) successful, version Check version using Tools->Xule->Version on the GUI or --xule-version on the command line. - xule </message>
+ <ref href="xule"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in Xince and Xodel successful, version 1.0. - xodel </message>
+ <ref href="xodel"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
+ <ref href="serializer"/></entry>
+<entry code="info" level="info">
+ <message>[info] Xule version: 3.0.30029 - </message>
+ <ref href=""/></entry>
+<entry code="info" level="info">
+ <message>[info] loaded in 0.04 secs at 2024-09-23T14:59:55 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4390306496">[xule:error] rule create_event_dimension: Rule: create_event_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4390306496">[xule:error] rule create_event_type_dimension: Rule: create_event_type_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4390306496">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_event_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" concept="[4390722672, &quot;__1713&quot;]" concept-name="{http://www.xbrl.org/2024/granular}TransactionDataAxis2" concept-attributes="{&quot;{http://xbrl.org/2005/xbrldt}typedDomainRef&quot;: &quot;#ferc_TransactionDataDomain.domain&quot;}" severity="info" cid="4390306496">[create_event_dimension] ferc:TransactionDataAxis - </message></entry>
+<entry code="create_event_type_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}eventDimensionItemType" type-parent-name="{http://www.xbrl.org/2003/instance}stringItemType" severity="info" cid="4390306496">[create_event_type_dimension] True - </message></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4390306496">[create_granular_taxonomy] True - </message></entry>
+<entry code="Serializer" level="info">
+ <message>[Serializer] Writing package /Users/campbellpryde/Documents/GitHub/streaming/GranularData/output/GranularTaxonomy.zip - </message>
+ <ref href=""/></entry>
+</log>
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL rule processor (xule) successful, version Check version using Tools->Xule->Version on the GUI or --xule-version on the command line. - xule </message>
+ <ref href="xule"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in Xince and Xodel successful, version 1.0. - xodel </message>
+ <ref href="xodel"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
+ <ref href="serializer"/></entry>
+<entry code="info" level="info">
+ <message>[info] Xule version: 3.0.30029 - </message>
+ <ref href=""/></entry>
+<entry code="info" level="info">
+ <message>[info] loaded in 0.04 secs at 2024-09-23T15:01:58 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4342339328">[xule:error] rule create_event_dimension: Rule: create_event_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4342339328">[xule:error] rule create_event_type_dimension: Rule: create_event_type_dimension - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4342339328">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_event_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" concept="[4345443776, &quot;__1713&quot;]" concept-name="{http://www.xbrl.org/2024/granular}TransactionDataAxis2" concept-attributes="{&quot;{http://xbrl.org/2005/xbrldt}typedDomainRef&quot;: &quot;#ferc_TransactionDataDomain.domain&quot;}" severity="info" cid="4342339328">[create_event_dimension] ferc:TransactionDataAxis - </message></entry>
+<entry code="create_event_type_dimension" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" document-uri="granular.xsd" type-name="{http://www.xbrl.org/2024/granular}eventDimensionItemType" type-parent-name="{http://www.xbrl.org/2003/instance}stringItemType" severity="info" cid="4342339328">[create_event_type_dimension] True - </message></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4342339328">[create_granular_taxonomy] True - </message></entry>
 <entry code="Serializer" level="info">
  <message>[Serializer] Writing package /Users/campbellpryde/Documents/GitHub/streaming/GranularData/output/GranularTaxonomy.zip - </message>
  <ref href=""/></entry>

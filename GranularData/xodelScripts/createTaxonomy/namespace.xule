@@ -35,3 +35,4 @@ namespace ixt = http://www.xbrl.org/inlineXBRL/transformation/2020-02-12
 namespace ixt-2015 = http://www.xbrl.org/inlineXBRL/transformation/2015-02-26
 namespace ref = http://www.xbrl.org/2006/ref
 namespace link = http://www.xbrl.org/2003/linkbase
+namespace xbrldt = http://xbrl.org/2005/xbrldt

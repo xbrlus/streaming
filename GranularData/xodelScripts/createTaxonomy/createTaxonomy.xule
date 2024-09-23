@@ -6,10 +6,12 @@ namespace property-part = https://xbrl.org/taxonomy/int/codelist-common/CR/2023-
 namespace property = http://xbrl.org/2022/role/property
 namespace dtr = http://www.xbrl.org/dtr/type/2022-03-31
 namespace dtr-concept = http://www.xbrl.org/dtr/concept/2022-03-31
+namespace ferc = http://www.ferc.gov/eqr/2021-01-01/ferc
+namespace xs = http://www.w3.org/2001/XMLSchema
 
 /** Use EQR Taxonomy **/
 
-constant $EQR = '/Users/campbellpryde/Documents/GitHub/streaming/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd'
+constant $EQR = taxonomy('/Users/campbellpryde/Documents/GitHub/streaming/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd')
 
 /** DEFINE THE PACKAGE 
 -----------------------**/
@@ -30,3 +32,29 @@ document-package-entry-point-description 'main entry point'
 document-package-entry-point-language 'en'
 document-package-entry-point-name 'Main'
 
+
+/** Create event dimension item type **/
+output create_event_type_dimension
+
+true
+package-name $GRANULAR_TAXONOMY
+document-uri 'granular.xsd'
+type-name qname('http://www.xbrl.org/2024/granular','eventDimensionItemType').to-xodel
+type-parent-name to-qname('xbrli:stringItemType').to-xodel
+
+
+/** Create event dimension item type **/
+
+
+output create_event_dimension
+
+$typedDim = $EQR.dimension(ferc:TransactionDataAxis).concept
+$domain = $typedDim.attribute(xbrldt:typedDomainRef) 
+$typedDim
+
+package-name $GRANULAR_TAXONOMY
+document-uri 'granular.xsd'
+concept $typedDim.to-xodel
+/**concept-data-type qname('http://www.xbrl.org/2024/granular','eventDimensionItemType').to-xodel**/
+concept-name qname('http://www.xbrl.org/2024/granular','TransactionDataAxis2').to-xodel
+concept-attributes dict(list(xbrldt:typedDomainRef, $domain)).to-xodel

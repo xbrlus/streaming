@@ -95,3 +95,9 @@ output-attribute label-concept
 //Import
 output-attribute import-url
 output-attribute import2-url
+
+
+//Parts
+output-attribute part-name
+output-attribute part-data-type
+output-attribute part-id
