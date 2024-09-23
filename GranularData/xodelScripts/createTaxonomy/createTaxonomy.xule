@@ -1,0 +1,32 @@
+namespace link = http://www.xbrl.org/2003/linkbase
+namespace unit = http://www.xbrl.org/2023/units
+namespace utr = http://www.xbrl.org/2009/utr
+namespace si = http://www.xbrl.org/2023/si-prefix
+namespace property-part = https://xbrl.org/taxonomy/int/codelist-common/CR/2023-08-23/property-part
+namespace property = http://xbrl.org/2022/role/property
+namespace dtr = http://www.xbrl.org/dtr/type/2022-03-31
+namespace dtr-concept = http://www.xbrl.org/dtr/concept/2022-03-31
+
+/** Use EQR Taxonomy **/
+
+constant $EQR = '/Users/campbellpryde/Documents/GitHub/streaming/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd'
+
+/** DEFINE THE PACKAGE 
+-----------------------**/
+
+constant $GRANULAR_TAXONOMY = 'GranularTaxonomy'
+
+
+output create_granular_taxonomy
+true
+package-name $GRANULAR_TAXONOMY
+package-url 'https://taxonomies.xbrl.us/xodel/granular'
+document-uri 'granular.xsd'
+document-namespace 'http://www.xbrl.org/2024/granular'
+document-import list('https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd').to-xodel
+/** import2-url '/Users/campbellpryde/Documents/GitHub/streaming/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd' **/
+document-package-entry-point true
+document-package-entry-point-description 'main entry point'
+document-package-entry-point-language 'en'
+document-package-entry-point-name 'Main'
+

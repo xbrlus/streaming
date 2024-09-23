@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL rule processor (xule) successful, version Check version using Tools->Xule->Version on the GUI or --xule-version on the command line. - xule </message>
+ <ref href="xule"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in Xince and Xodel successful, version 1.0. - xodel </message>
+ <ref href="xodel"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
+ <ref href="serializer"/></entry>
+<entry code="info" level="info">
+ <message>[info] Xule version: 3.0.23759 - </message>
+ <ref href=""/></entry>
+<entry code="info" level="info">
+ <message>[info] loaded in 0.51 secs at 2024-06-27T17:52:22 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4344836944">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;/Users/campbellpryde/Documents/GitHub/streaming/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4344836944">[create_granular_taxonomy] True - </message></entry>
+<entry code="Serializer" level="info">
+ <message>[Serializer] Writing package /Users/campbellpryde/Documents/GitHub/streaming/GranularData/output/GranularTaxonomy.zip - </message>
+ <ref href=""/></entry>
+</log>
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL rule processor (xule) successful, version Check version using Tools->Xule->Version on the GUI or --xule-version on the command line. - xule </message>
+ <ref href="xule"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in Xince and Xodel successful, version 1.0. - xodel </message>
+ <ref href="xodel"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
+ <ref href="serializer"/></entry>
+<entry code="info" level="info">
+ <message>[info] Xule version: 3.0.23759 - </message>
+ <ref href=""/></entry>
+<entry code="info" level="info">
+ <message>[info] loaded in 0.05 secs at 2024-06-27T17:54:51 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" import2-url="/Users/campbellpryde/Documents/GitHub/streaming/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4417299968">[create_granular_taxonomy] True - </message></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" import2-url="/Users/campbellpryde/Documents/GitHub/streaming/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4417299968">[create_granular_taxonomy] True - </message></entry>
+<entry code="Serializer" level="info">
+ <message>[Serializer] Writing package /Users/campbellpryde/Documents/GitHub/streaming/GranularData/output/GranularTaxonomy.zip - </message>
+ <ref href=""/></entry>
+</log>
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL rule processor (xule) successful, version Check version using Tools->Xule->Version on the GUI or --xule-version on the command line. - xule </message>
+ <ref href="xule"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in Xince and Xodel successful, version 1.0. - xodel </message>
+ <ref href="xodel"/></entry>
+<entry code="info" level="info">
+ <message>[info] Activation of plug-in XBRL Serializer successful, version 01.0. - serializer </message>
+ <ref href="serializer"/></entry>
+<entry code="info" level="info">
+ <message>[info] Xule version: 3.0.23759 - </message>
+ <ref href=""/></entry>
+<entry code="info" level="info">
+ <message>[info] loaded in 0.08 secs at 2024-06-27T17:58:50 - /Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml </message>
+ <ref href="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml"/></entry>
+<entry code="xule:error" level="error">
+ <message cid="4838767168">[xule:error] rule create_granular_taxonomy: Rule: create_granular_taxonomy - 'to-xodel' is not a valid property. - e60501000gd-20111231.xml </message>
+ <ref href="e60501000gd-20111231.xml"/></entry>
+<entry code="create_granular_taxonomy" level="info">
+ <message filing_url="/Users/campbellpryde/Downloads/efm-68d-231120/conf/605-instance-syntax/605-01-entity-identifier-scheme/e60501000gd-20111231.xml" package-name="GranularTaxonomy" package-url="https://taxonomies.xbrl.us/xodel/granular" document-uri="granular.xsd" document-namespace="http://www.xbrl.org/2024/granular" document-import="[&quot;https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd&quot;]" document-package-entry-point="True" document-package-entry-point-description="main entry point" document-package-entry-point-language="en" document-package-entry-point-name="Main" severity="info" cid="4838767168">[create_granular_taxonomy] True - </message></entry>
+<entry code="Serializer" level="info">
+ <message>[Serializer] Writing package /Users/campbellpryde/Documents/GitHub/streaming/GranularData/output/GranularTaxonomy.zip - </message>
+ <ref href=""/></entry>
+</log>

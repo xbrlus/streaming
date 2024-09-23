@@ -1,0 +1,3 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:granular="http://www.xbrl.org/2024/granular" targetNamespace="http://www.xbrl.org/2024/granular" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:import namespace="http://www.ferc.gov/eqr/2020-01-01/ferc-all" schemaLocation="https://raw.githubusercontent.com/xbrlus/streaming/main/Examples/ElectricityData/Taxonomy/EQRT/ferc-all_2021-01-01.xsd"/>
+</xs:schema>
